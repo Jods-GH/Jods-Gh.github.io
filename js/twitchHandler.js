@@ -1,5 +1,5 @@
 window.onload = function(){
-    /* 
+     
     var player = new Twitch.Embed("twitch-embed", {
         width: 900,
         height: 900,
@@ -8,9 +8,8 @@ window.onload = function(){
         muted: true,
         //parent: [ "jods-gh.github.io"]
       });
-    */
-    //player.addEventListener(Twitch.Player.READY, initiate)
-    //document.getElementById("twitch-embed").classList.add('hide');
+    player.addEventListener(Twitch.Player.READY, initiate)
+    document.getElementById("twitch-embed").classList.add('hide');
 }
 
 function initiate() {
