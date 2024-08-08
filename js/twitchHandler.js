@@ -1,6 +1,7 @@
+var player
 window.onload = function(){
      
-    var player = new Twitch.Embed("twitch-embed", {
+    player = new Twitch.Embed("twitch-embed", {
         width: 500,
         height: 888,
         channel: "Jodsderechte",
