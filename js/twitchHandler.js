@@ -9,7 +9,6 @@ window.onload = function(){
         //parent: [ "jods-gh.github.io"]
       });
     player.addEventListener(Twitch.Player.READY, initiate)
-    document.getElementById("twitch-embed").classList.add('hide');
 }
 
 function initiate() {
