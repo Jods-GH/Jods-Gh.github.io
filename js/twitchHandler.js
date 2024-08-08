@@ -1,8 +1,8 @@
 window.onload = function(){
      
     var player = new Twitch.Embed("twitch-embed", {
-        width: 900,
-        height: 900,
+        width: 500,
+        height: 888,
         channel: "Jodsderechte",
         autoplay: false,
         muted: true,
@@ -27,7 +27,6 @@ function handleOnline() {
 }
 
 function handleOffline() {
-    document.getElementById("twitchHolder").classList.add('hide');
     document.getElementById("LiveFlair").classList.add('hide');
     //document.getElementById("twitch").classList.add('hide');
     player.removeEventListener(Twitch.Player.OFFLINE, handleOffline);
