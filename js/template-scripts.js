@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
     loop: true,
     navText: ["&#xe605","&#xe606"],
     autoplay: true,
-    autoplayTimeout: 10000
+    autoplayTimeout: 8000
   });
 
   // Owl Carousel - Content Blocks  
