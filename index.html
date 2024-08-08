@@ -1,385 +1,624 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Oh no</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/5e9ecb2ecd.js" crossorigin="anonymous"></script>
-<style>
-
-@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
-
-@-moz-keyframes rocket-movement { 100% {-moz-transform: translate(1200px,-600px);} }
-@-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1200px,-600px); } }
-@keyframes rocket-movement { 100% {transform: translate(1200px,-600px);} }
-@-moz-keyframes spin-earth { 100% { -moz-transform: rotate(-360deg); transition: transform 20s;  } }
-@-webkit-keyframes spin-earth { 100% { -webkit-transform: rotate(-360deg); transition: transform 20s;  } }
-@keyframes spin-earth{ 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); transition: transform 20s; } }
-
-@-moz-keyframes move-astronaut {
-    100% { -moz-transform: translate(-160px, -160px);}
-}
-@-webkit-keyframes move-astronaut {
-    100% { -webkit-transform: translate(-160px, -160px);}
-}
-@keyframes move-astronaut{
-    100% { -webkit-transform: translate(-160px, -160px); transform:translate(-160px, -160px); }
-}
-@-moz-keyframes rotate-astronaut {
-    100% { -moz-transform: rotate(-720deg);}
-}
-@-webkit-keyframes rotate-astronaut {
-    100% { -webkit-transform: rotate(-720deg);}
-}
-@keyframes rotate-astronaut{
-    100% { -webkit-transform: rotate(-720deg); transform:rotate(-720deg); }
-}
-
-@-moz-keyframes glow-star {
-    40% { -moz-opacity: 0.3;}
-    90%,100% { -moz-opacity: 1; -moz-transform: scale(1.2);}
-}
-@-webkit-keyframes glow-star {
-    40% { -webkit-opacity: 0.3;}
-    90%,100% { -webkit-opacity: 1; -webkit-transform: scale(1.2);}
-}
-@keyframes glow-star{
-    40% { -webkit-opacity: 0.3; opacity: 0.3;  }
-    90%,100% { -webkit-opacity: 1; opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2); border-radius: 999999px;}
-}
-
-.spin-earth-on-hover{
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jods</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/5e9ecb2ecd.js" crossorigin="anonymous"></script>
+    <script src = "https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
+    <script type="text/javascript" src="js/twitchHandler.js"></script>    
+  </head>
+  
+  <body class="size-1140">
+  	<!-- Live BUTTON -->
+  	<a id="LiveFlair" target="_blank" class="hide-s" href="https://www.twitch.tv/Jodsderechte" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="img/live.png" alt=""></a>
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/logo.png" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/logo-dark.png" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="addons.html">WeakAuras</a></li>
+            <li><a>Addons</a>
+              <ul>
+                <li><a href="https://www.curseforge.com/wow/addons/dungeon-aura-tools" target="_blank">Dungeon Aura Tools</a></li>
+                <li><a href="https://www.curseforge.com/wow/addons/groupfinderrio" target="_blank">Group Finder Rio</a></li>
+                <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Custom Names</a>
+                  <ul>
+                    <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Main Addon</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_elvui" target="_blank">ElvUi Plugin</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_mrt" target="_blank">MRT Plugin</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_chat" target="_blank">Chat Plugin</a></li>
+                    <li><a href="https://wago.io/CustomNames" target="_blank">Plater Mod</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="wowInterface.html">WoW Interface</a></li>
+            <li><a href="pokemon.html">Pokemon Stream Game</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     
-    transition: ease 200s !important;
-    transform: rotate(-3600deg) !important;
-}
-
-html, body{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 300;
-    -webkit-user-select: none; /* Safari 3.1+ */
-    -moz-user-select: none; /* Firefox 2+ */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Standard syntax */
-}
-
-.bg-purple{
-    background: url(http://salehriaz.com/404Page/img/bg_purple.png);
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-position: left top;
-    height: 100%;
-    overflow: hidden;
-    
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-/*    overflow: hidden;*/
-    display: flex; 
-    align-items: center; 
-}
-
-li {
-    float: left;
-    padding: 0px 15px;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing : 2px;
-    font-size: 12px;
-    
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-
-li a:hover {
-    color: #ffcb39;
-}
-
-.btn-request{
-    padding: 10px 25px;
-    border: 1px solid #FFCB39;
-    border-radius: 100px;
-    font-weight: 400;
-}
-
-.btn-request:hover{
-    background-color: #FFCB39;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
-}
-
-.btn-go-home{
-    position: relative;
-    margin: auto;
-    z-index: 200;
-    width: 300px;
-    padding: 10px 15px;
-    border: 1px solid #FFCB39;
-    border-radius: 100px;
-    font-weight: 400;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing : 2px;
-    font-size: 31px;
-    
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-
-.btn-go-home:hover{
-    background-color: #FFCB39;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
-}
-
-.central-body{
-/*    width: 100%;*/
-    padding: 5% 5% 5% 5%;
-    text-align: center;
-}
-
-.objects img{
-    z-index: 90;
-    pointer-events: none;
-}
-
-.object_rocket{
-    z-index: 95;
-    position: absolute;
-    transform: translateX(-50px);
-    top: 75%;
-    pointer-events: none;
-    animation: rocket-movement 200s linear infinite both running;
-}
-
-.object_earth{
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    z-index: 90;
-/*    animation: spin-earth 100s infinite linear both;*/
-}
-
-.object_moon{
-    position: absolute;
-    top: 12%;
-    left: 25%;
-/*
-    transform: rotate(0deg);
-    transition: transform ease-in 99999999999s;
-*/
-}
-
-.object_astronaut{
-    animation: rotate-astronaut 200s infinite linear both alternate;
-}
-
-.box_astronaut{
-    z-index: 110 !important;
-    position: absolute;
-    top: 60%;
-    right: 20%;
-    will-change: transform;
-    animation: move-astronaut 50s infinite linear both alternate;
-}
-
-.image-404{
-    position: relative;
-    z-index: 100;
-    pointer-events: none;
-}
-
-.stars{
-    background: url(http://salehriaz.com/404Page/img/overlay_stars.svg);
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: left top;
-}
-
-.glowing_stars .star{
-    position: absolute;
-    border-radius: 100%;
-    background-color: #fff;
-    width: 3px;
-    height: 3px;
-    opacity: 0.3;
-    will-change: opacity;
-}
-
-.glowing_stars .star:nth-child(1){
-    top: 80%;
-    left: 25%;
-    animation: glow-star 2s infinite ease-in-out alternate 1s;
-}
-.glowing_stars .star:nth-child(2){
-    top: 20%;
-    left: 40%;
-    animation: glow-star 2s infinite ease-in-out alternate 3s;
-}
-.glowing_stars .star:nth-child(3){
-    top: 25%;
-    left: 25%;
-    animation: glow-star 2s infinite ease-in-out alternate 5s;
-}
-.glowing_stars .star:nth-child(4){
-    top: 75%;
-    left: 80%;
-    animation: glow-star 2s infinite ease-in-out alternate 7s;
-}
-.glowing_stars .star:nth-child(5){
-    top: 90%;
-    left: 50%;
-    animation: glow-star 2s infinite ease-in-out alternate 9s;
-}
-h1{
-    font-weight: 400;
-    color: white;
-    letter-spacing : 40px;
-    font-size: 481px;
-    margin: auto;
-}
-h2{
-    margin: auto;
-    font-weight: 400;
-    color: white;
-    letter-spacing : 2px;
-    font-size: 81px;
-}
-
-@media only screen and (max-width: 600px){
-    .navbar-links{
-        display: none;
-    }
-    
-    .custom-navbar{
-        text-align: center;
-    }
-    
-    .brand-logo img{
-        width: 120px;
-    }
-    
-    .box_astronaut{
-        top: 70%;
-    }
-    
-    .central-body{
-        padding-top: 25%;
-    }
-}
-
-.languagePicker{
-  padding:16px 16px;
-  float:left;
-  width:auto;
-  border:none;
-  display:block;
-  outline:0;
-  white-space:normal;
-  font-family: "Raleway", sans-serif;
-}
-#language-picker-select{
-  background-color: #616161;
-  color: white;
-  border: none;
-  border-radius: 10%;
-  font-family: "Raleway", sans-serif;
-}
-
-.select-items {
-  position: absolute;
-  top: 100%;
-  left: 20;
-  right: 20;
-  z-index: 99;
-  font-family: "Raleway", sans-serif;
-}
-
-
-.language-picker__form:hover #language-picker-select {
-  background-color: #9e9e9e;
-  font-family: "Raleway", sans-serif;
-}
-.w3-bar .w3-bar-item{
-  font-family: "Raleway", sans-serif;
-  padding-top: 16px;
-}
-.fa {
-    color: #ffffff;
-}
-
-</style>
-</head>
-<body class="bg-purple">
-  <!-- Navbar (sit on top) -->
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <header>
         
-  <div class="stars">
-      <div class="central-body">
-          <h1>404</h1>
-          <h2>Looks like you took a wrong turn</h2>
-          <a href="https://jods.me/" class="btn-go-home">GO BACK HOME</a>
-      </div>
-      <div class="objects">
-          <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px">
-          <div class="earth-moon">
-              <img class="object_earth" src="http://salehriaz.com/404Page/img/earth.svg" width="100px">
-              <img class="object_moon" src="http://salehriaz.com/404Page/img/moon.svg" width="80px">
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+          
+          <div class="item">
+            <div class="s-12">
+              <img src="img/header.jpg" style="height:100%; width:100%;" alt="">
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-primary margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">Jods</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40"> Hier findet ihr alle meine Links.</p></div>
+                    <div class="line">
+                      <div class="s-12 m-12 l-3 center">
+                        <a class="button button-white-stroke s-12" href="https://linktr.ee/jodsderechte" target="_blank">Get Started Now</a>
+                      </div>       
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="item">
+            <div class="s-12">
+              <img src="img/weakauras_hd.png" style="height:100%; width:100%;" alt="">
+              <div class="carousel-content">
+                <div class="content-center-vertical line" style="background-color: #00000094; width: 30%;  margin-left: auto; margin-right: auto; border-radius: 16px;">
+                  <div class="margin-top-bottom-80" >
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">WeakAuras</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40"> Hier findet ihr alle meine WeakAuren.</p></div>
+                    <div class="line">
+                      <div class="s-12 m-12 l-3 center">
+                        <a class="button button-white-stroke s-12" href="https://wago.io/p/jodsderechte" target="_blank"> Wago.io</a>
+                      </div>       
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="box_astronaut">
-              <img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg" width="140px">
+          <div class="item twitchHolder">
+            <div class="s-12">
+              <iframe class="center" style="margin-top: 10%;"
+                        src="https://player.twitch.tv/?channel=Jodsderechte&muted=true&parent=jods-gh.github.io" 
+                        height="500"
+                        width="888"
+                        allowfullscreen>
+              </iframe>  
+            </div>
+          </div>               
+        </div>               
+      </header>
+      
+      <!-- Section 1 -->
+      <section class="section-small-padding background-white text-center"> 
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-shield icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Unlimited Color Variants</h2>
+                <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-umbrella icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Parallax Background</h2>
+                <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <div class="padding-2x block-bordered">
+                <i class="icon-sli-home icon3x text-dark center margin-bottom-30"></i>
+                <h2 class="text-thin">Clean Modern Code</h2>
+                <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+                <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+              </div>
+            </div>
           </div>
-      </div>
-      <div class="glowing_stars">
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-
-      </div>
-
-  </div>
-  <!-- Footer -->
-<footer class="w3-center w3-padding-64">
-    <div class="w3-xlarge w3-section">
-      <a href="https://discord.com/invite/v3gYmYamGJ"target="_blank"><i class="fa fa-brands fa-discord w3-hover-opacity"></i></a> 
-      <a href="https://github.com/Jodsderechte/"target="_blank"><i class="fa fa-brands fa-github w3-hover-opacity"></i></a> 
-      <a href="https://www.youtube.com/user/Jodsderechte"target="_blank"><i class="fa fa-brands fa-youtube w3-hover-opacity"></i></a> 
-      <a href="https://www.paypal.com/donate/?hosted_button_id=PSQ4D3HXNZKMG"target="_blank"><i class="fa fa-brands fa-paypal w3-hover-opacity"></i></a>
-    </div>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
-</body>
+        </div>
+      </section>
+      
+      <!-- Section 1 -->
+      <section class="section">
+        <div class="line">
+          <h2 class="text-size-50  text-m-size-40 text-center">About Us</h2>
+          <hr class="break-small background-primary break-center">
+        </div>
+        <div class="line">
+          <div class="margin">  
+            <div class="s-12 m-12 l-2">
+              <p class="h1 text-size-30 margin-m-bottom-30 text-primary text-line-height-1 text-right">We Are<br> Web Design Heroes</p>
+            </div>
+            <div class="s-12 m-12 l-5">
+              <p class="text-size-14 margin-m-bottom-30 text-dark">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Mirum est notare quam littera gothica. </p>
+            </div>
+            <div class="s-12 m-12 l-5">
+              <p class="text-size-14 text-dark">Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div>
+          </div>
+        </div>    
+      </section>
+      
+      <!-- Section 2 -->
+      <section class="full-width">
+        <div class="s-12 m-12 l-6">  
+          <img src="img/WoWInterface/betterBags.png" alt="">
+        </div>
+        <div class="s-12 m-12 l-6">
+          <div class="padding-2x">
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-drop icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60 margin-bottom-30">
+                <h3 class="text-size-25 margin-bottom-0">Unlimited Color Variants</h3>
+                <p class="text-dark">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.<br> Vel illum dolore eu feugiat nulla facilisis.</p>            
+              </div>
+            </div>
+            
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-screen-smartphone icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60 margin-bottom-30">
+                <h3 class="text-size-25 margin-bottom-0">Responsive Layoute</h3>
+                <p class="text-dark">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>            
+              </div>
+            </div>
+            
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-heart icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60 margin-bottom-30">
+                <h3 class="text-size-25 margin-bottom-0">Clean Minimalistic Design</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.<br> Vel illum dolore eu feugiat nulla facilisis.</p>            
+              </div>
+            </div>
+            
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-chart icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60 margin-bottom-30">
+                <h3 class="text-size-25 margin-bottom-0">Tons of Animated Elements</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>            
+              </div>
+            </div>
+            
+            <div class="line">
+              <div class="float-left">
+                <i class="icon-sli-globe-alt icon3x text-dark"></i>
+              </div>
+              <div class="margin-left-60">
+                <h3 class="text-size-25 margin-bottom-0">And many more...</h3>
+                <p class="text-dark">Nam liber tempor cum soluta nobis eleifend. Duis autem vel eum iriure dolor<br> in hendrerit in vulputate velit esse molestie consequat.</p>            
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section 3 -->
+      <section class="section background-white" >  
+        <div class="line">
+          <h2 class="text-size-50  text-m-size-40 text-center">Our Stats</h2>
+          <hr class="break-small background-primary break-center">
+          <div class="margin margin-top-bottom-50">
+            <div class="s-12 m-12 l-3">
+              <div class="block">
+                <div class="count-to">
+                  <span class="timer h1 text-size-50  text-m-size-40">1500</span>
+                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Eodem modo typi</p> 
+                </div>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-3">
+              <div class="block">
+                <div class="count-to">
+                  <span class="timer h1 text-size-50  text-m-size-40">95%</span>
+                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Duis autem</p> 
+                </div>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-3">
+              <div class="block">
+                <div class="count-to">
+                  <span class="timer h1 text-size-50  text-m-size-40">287</span>
+                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Mirum est notare</p> 
+                </div>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-3">
+              <div class="block">
+                <div class="count-to">
+                  <span class="timer h1 text-size-50  text-m-size-40">7 milion</span>
+                  <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Nam liber tempor</p> 
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      
+      <hr class="break margin-top-bottom-0">
+      
+      <!-- Section 4 -->
+      <section class="section-top-padding full-width">
+        <h2 class="text-size-50  text-m-size-40 text-center">Our Work</h2>
+        <hr class="break-small background-primary break-center"> 
+        <div class="tabs background-primary-hightlight">
+            <div class="tab-item tab-active">
+              <a class="tab-label active-btn">Web Design</a>
+              <div class="tab-content lightbox-gallery">
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 1" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 2" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 3" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 4" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 5" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 6" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 7" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 8" />
+                  </a>	
+                </div>
+              </div>  
+            </div>
+            <div class="tab-item">
+              <a class="tab-label">Graphic Design</a>
+              <div class="tab-content lightbox-gallery">
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 1" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 2" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 3" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 4" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 5" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 6" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 7" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 8" />
+                  </a>	
+                </div>
+              </div>  
+            </div>
+            <div class="tab-item">
+              <a class="tab-label">Campaigns</a>
+              <div class="tab-content lightbox-gallery">
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 9" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 10" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 11" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 12" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 13" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 14" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 15" />
+                  </a>	
+                </div>
+                <div class="s-12 m-6 l-3">
+                  <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                    <div class="image-hover-overlay background-primary"> 
+                      <div class="image-hover-overlay-content text-center padding-2x">
+                        <h2 class="text-thin">Lorem Ipsum Dolor</h2> 
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p> 
+                      </div> 
+                    </div> 
+                    <img src="img/WoWInterface/betterBags.png" alt="" title="Portfolio Image 16" />
+                  </a>	
+                </div>
+              </div>  
+            </div>
+         </div>
+      </section>
+      
+      <!-- Section 5 -->    
+      <section class="section background-white text-center">
+        <div class="line">
+          <h2 class="text-size-50  text-m-size-40 text-center">Testimonials</h2>
+          <hr class="break-small background-primary break-center">
+          <div class="carousel-default owl-carousel carousel-wide-arrows">
+            <div class="item">
+              <div class="s-12 m-12 l-7 center text-center">
+                <img class="image-testimonial-small" src="img/WoWInterface/betterBags.png" alt="">
+                <p class="h1 margin-bottom text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+                <p class="h1 text-size-16">Scott Star / CEO / Company</p>
+              </div>
+            </div>
+            <div class="item"> 
+              <div class="s-12 m-12 l-7 center text-center">
+                <img class="image-testimonial-small" src="img/WoWInterface/betterBags.png" alt="">
+                <p class="h1 margin-bottom text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+                <p class="h1 text-size-16">Mark Stoner / Web Developer / Company</h5>
+              </div>
+            </div>
+            <div class="item">
+              <div class="s-12 m-12 l-7 center text-center">
+                <img class="image-testimonial-small" src="img/WoWInterface/betterBags.png" alt="">
+                <p class="h1 margin-bottom text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+                <p class="h1 text-size-16">Jane Naismith / Web Designer / Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     
-
-<!-- Footer -->
- 
-<script>
-    
-</script>
-
-</body>
+    <!-- FOOTER -->
+    <footer>
+      
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <a href="https://discord.com/invite/v3gYmYamGJ"target="_blank"><i class="fa fa-brands fa-discord w3-hover-opacity"></i></a> 
+          <a href="https://github.com/Jodsderechte/"target="_blank"><i class="fa fa-brands fa-github w3-hover-opacity"></i></a> 
+          <a href="https://www.youtube.com/user/Jodsderechte"target="_blank"><i class="fa fa-brands fa-youtube w3-hover-opacity"></i></a> 
+          <a href="https://www.paypal.com/donate/?hosted_button_id=PSQ4D3HXNZKMG"target="_blank"><i class="fa fa-brands fa-paypal w3-hover-opacity"></i></a>
+          <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
+        </div>
+        <div class="s-12 l-6">
+          <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
 </html>
