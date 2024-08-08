@@ -129,6 +129,23 @@ blockquote::before {
   padding: 10px;
 }
 
+.background-video {
+  width: 2560;
+  height: 1198;
+  position: relative;
+  object-fit: cover;
+  z-index: -1;
+}
+.twitch-embed {
+  position:absolute;
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Adjusts for the element’s width and height */
+  z-index: 2;
+  width: 960px; /* Adjust the width as needed */
+  height: 540px; /* Adjust the height as needed */
+}
+
 blockquote {
   border: 0;
   font-size: 1rem;
