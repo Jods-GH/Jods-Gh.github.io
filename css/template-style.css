@@ -133,6 +133,11 @@ blockquote::before {
   width: 10%;
   padding: 10px;
 }
+.center-horizontally-20 {
+  margin: auto;
+  width: 20%;
+  padding: 10px;
+}
 .center-horizontally-30 {
   margin: auto;
   width: 30%;
