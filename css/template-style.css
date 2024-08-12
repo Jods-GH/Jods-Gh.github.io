@@ -450,6 +450,50 @@ aside {
   background: none;
   color: #333;
 }
+#wago-NyseKq1Xo a{
+  display: none !important;
+}
+#wago-p1KMJgMX1 a{
+  display: none !important;
+}
+#wago-417WWtKOW a{
+  display: none !important;
+}
+#wago-BJKO1gsI7 a{
+  display: none !important;
+}
+#wago-NkAOjKJ6G a{
+  display: none !important;
+}
+#wago-ggvjgMo7x a{
+  display: none !important;
+}
+#wago--y14AGmDA a{
+  display: none !important;
+}
+#wago-zfw9UvkI7 a{
+  display: none !important;
+}
+#wago-f7Z1Te6hb a{
+  display: none !important;
+}
+#wago-4J8ChnHOM a{
+  display: none !important;
+}
+#wago-PfUOlM-IM a{
+  display: none !important;
+}
+#wago-tXs4-ei7t a{
+  display: none !important;
+}
+#wago-wQ11u_FTB a{
+  display: none !important;
+}
+#wago-ry_EsCrIm a{
+  display: none !important;
+}
+
+
 .aside-nav li ul ul {
   background: #e9e9e9 none repeat scroll 0 0;
 }
@@ -478,7 +522,7 @@ aside.aside-left {
 
 .aside-nav.background-primary-hightlight > ul > li > a:hover, .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited,
 .primary-color-primary .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-primary .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-primary .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
-  border-color: #C81010;
+  border-color: #792020;
 }  
 .aside-nav.background-dark-hightlight > ul > li > a:hover, .aside-nav.background-dark-hightlight > ul > li.active-item > a:link, .aside-nav.background-dark-hightlight > ul > li.active-item > a:visited,
 .primary-color-dark .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
@@ -491,7 +535,7 @@ aside.aside-left {
 } 
 .background-dark, .background-dark p, a.background-dark, a.background-dark:visited, a.background-dark:link, .background-dark a, .background-dark a:link, .background-dark a:visited, .background-dark a:hover, .background-dark a:active,
 .primary-color-dark .background-primary, .primary-color-dark .background-primary p, .primary-color-dark a.background-primary, .primary-color-dark a.background-primary:visited, .primary-color-dark a.background-primary:link, .primary-color-dark a.background-primary:visited, .primary-color-dark .background-primary a, .primary-color-dark .background-primary a:link, .primary-color-dark .background-primary a:visited, .primary-color-dark .background-primary a:hover, .primary-color-dark .background-primary a:active {
-  color: #7697A2;
+  color: #d3dcde;
 }
 .background-white h1, .background-white h2, .background-white h3, .background-white h4, .background-white h5, .background-white h6,
 .background-white .h1, .background-white .h2, .background-white .h3, .background-white .h4, .background-white .h5, .background-white .h6, 
@@ -554,7 +598,7 @@ aside.aside-left {
   background-color: #fff !important;
 }
 .background-primary, .primary-color-primary .background-primary {
-  background-color: #C81010 !important;
+  background-color: #792020 !important;
 }
 .background-dark, .primary-color-dark .background-primary {
   background-color: #002633 !important; 
