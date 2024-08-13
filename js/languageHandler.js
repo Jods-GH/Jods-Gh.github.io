@@ -1,3 +1,4 @@
+const languageRegex = /^\/[a-z]{2}-[A-Z]{2}/;
 
 window.onload = function(){
 
@@ -11,8 +12,15 @@ function handleLanguage(language){
     let location = window.location.href;
     let url = new URL(location);
     let pathName = url.pathname;
-    let newPathname = `/${language}${pathName}`;
-    let newUrl = `${url.origin}${newPathname}`;
+    if (languageRegex.test(pathName)) {
+        // Replace the existing language code with the new one
+        pathName = pathName.replace(languageRegex, `/${language}`);
+    } else {
+        // If no language code is present, prepend the new one
+        pathName = `/${language}${pathName}`;
+    }
+
+    let newUrl = `${url.origin}${pathName}${url.search}`;
     if( newUrl !== location){
         checkAndChangeToURL(newUrl);
     }
