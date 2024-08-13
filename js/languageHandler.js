@@ -1,12 +1,5 @@
 const languageRegex = /^\/[a-z]{2}-[A-Z]{2}/;
 
-window.onload = function(){
-
-    let language = localStorage.getItem('language') || navigator.language || navigator.userLanguage || 'en-US';
-    handleLanguage(language); //setting language
-
-}
-
 function handleLanguage(language){
     console.log(language);
     let location = window.location.href;
@@ -37,3 +30,6 @@ async function checkAndChangeToURL(url) {
       console.log("doing nothing");
     }
 }
+
+let language = localStorage.getItem('language') || navigator.language || navigator.userLanguage || 'en-US';
+handleLanguage(language); //setting language
