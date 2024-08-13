@@ -492,6 +492,18 @@ aside {
 #wago-ry_EsCrIm a{
   display: none !important;
 }
+.highlight { color: #ff6347; font-weight: bold; }
+.rarity-common { color: #1eff00; }
+.rarity-rare { color: #0070dd; }
+.rarity-epic { color:#a335ee }
+.role-tag { font-weight: bold; }
+.role-viewer { color: #ffffff; }
+.role-follower { color: #25DBE2FF; }
+.role-subscriber { color: #E91E63FF; }
+.role-mod { color: #0FF855FF; }
+.role-jods { color: #FFC887FF; }
+.effekt-hearth{ color: #fa76c9}
+.effekt-star{ color: #f0e68c}
 
 
 .aside-nav li ul ul {

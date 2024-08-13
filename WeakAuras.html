@@ -13,7 +13,9 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
+    <script src = "https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript" src="js/twitchHandler.js"></script>     
   </head>
   
   <body class="size-1140">
@@ -52,7 +54,6 @@
                 
               </ul>
             </li>
-            <li><a href="about.html">About</a></li>
             <li><a href="wowInterface.html">WoW Interface</a></li>
             <li><a href="pokemon.html">Pokemon Stream Game</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -63,55 +64,397 @@
     
     <!-- MAIN -->
     <main role="main">
+      <div class="twitch-embed hide"></div>
       <!-- Content -->
       <article>
         <header class="section background-dark">
           <div class="line">        
-            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">Our Products</h1>
-            <p class="margin-bottom-0 text-size-16">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">Meine WeakAuren</h1>
+            <p class="margin-bottom-0 text-size-16">
+              Hier findest du eine Sammlung meiner besten und nützlichsten WeakAuren, die dir helfen, das Maximum aus deinem Spiel herauszuholen. 
+              Ob du deine Buffs und Debuffs im Auge behalten, wichtige Abklingzeiten überwachen oder einfach nur den Überblick im Chaos eines Dungeons behalten willst – diese WeakAuren bieten dir alles, was du dafür brauchst. 
+              Jede einzelne WeakAura ist darauf ausgelegt, dich in den entscheidenden Momenten zu unterstützen und sicherzustellen, dass du immer bestens vorbereitet bist. 
+              Viel Spaß beim Entdecken und Verbessern deines Interfaces!
+
+            </p>
           </div>  
         </header>
-        <section class="section background-white">
-          <div class="line">
-            <h2 class="text-size-40 margin-bottom-30">Investigationes demonstraverunt lectores</h2>
-            <hr class="break-small background-primary margin-bottom-30">
-            <p class="margin-bottom-40">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros 
-              et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            </p>
-          </div>   
-          <div class="line text-center">
-            <div class="margin">
-              <div class="s-12 m-12 l-4 margin-m-bottom">
-                <div class="padding-2x background-primary">
-                  <i class="icon-sli-shield icon3x text-white margin-bottom-30"></i>
-                  <h2 class="text-thin">Unlimited Color Variants</h2>
-                  <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-                  <a class="button button-white-stroke text-size-12" href="/">GET MORE INFO</a>
-                </div>
+        <section class="section-top-padding background-dark full-width">
+          <hr class="break-small background-primary break-center"> 
+          <div class="tabs background-primary-hightlight">
+              <div class="tab-item tab-active">
+                <a class="tab-label text-white active-btn">Dungeon Auren</a>
+                <div class="tab-content lightbox-gallery background-dark">
+                  <div class = "center-horizontally background-dark full-width">
+                    <img src="img/WeakAuras/auratypes.png" alt="" title="auratypes" />        
+                  </div>
+                  <div class="line"> 
+                    <p class="margin-bottom-10 text-size-16">
+                      Dungeon WeakAuras bieten während Dungeon-Begegnungen visuelle und auditive Hinweise, um das Bewusstsein der Spielenden für Mechaniken zu verbessern. 
+                    Sie erstellen anpassbare Warnungen wie Symbole, Animationen und Geräusche, die Spielende vor bestimmten Boss-Fähigkeiten oder gefährlichen Situationen warnen. 
+                    Diese Hinweise helfen Spielenden, schnell zu reagieren und bessere Entscheidungen zu treffen, was letztendlich ihre Leistung verbessert und zu erfolgreicheren Dungeon-Läufen beiträgt.
+                    Auf wago findest du sie direkt <a class ="text-primary-hover" href="https://wago.io/Dungeons" target="_blank"> <strong>Hier</strong></a>
+                  </p>
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/Current-Dungeons" target="_blank">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Current Season Dungeons</h2> 
+                          <p>
+                            Hier findest du alle wichtigen Dungeon-Auras für die aktuelle Season. Diese Auren helfen dir dabei, jede Herausforderung zu meistern, indem sie dir nützliche Informationen und Warnungen direkt im Spiel anzeigen. 
+                            So bist du immer bestens vorbereitet, egal welcher Dungeon auf dich wartet.
+                          </p> 
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/CurrentSeasonDungeons.png" alt="" title="Current-Season-Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/TWW-Dungeons" target="_blank">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">The War Within Dungeons</h2> 
+                          <p>Entdecke hier die Auren für die Dungeons aus "The War Within." Sie bieten dir wertvolle Unterstützung, um die neuen Herausforderungen dieser Erweiterung souverän zu meistern.</p> 
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/TheWarWithinDungeons.png" alt="" title="The-War-Within-Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/DF-Dungeons">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Dragonflight Dungeons</h2> 
+                          <p>Diese Auren sind speziell für die Dungeons aus "Dragonflight" konzipiert. Sie helfen dir, in den Lüften und am Boden stets den Überblick zu behalten.</p> 
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/DragonflightDungeons.png" alt="" title="Dragonflight-Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/SL-Dungeons">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Shadowlands-Dungeons</h2> 
+                          <p>Tauche in die düsteren Tiefen der Schattenlande ein und nutze diese Auren, um sicher durch die gefährlichen Dungeons dieser finsteren Welt zu navigieren.</p> 
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/ShadowlandsDungeons.png" alt="" title="Shadowlands-Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/BFA-Dungeons">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Battle for Azeroth Dungeons</h2> 
+                          <p>Diese Auren begleiten dich durch die Dungeons von "Battle for Azeroth" und helfen dir, die Konflikte um die Zukunft Azeroths erfolgreich zu bestehen.</p> 
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/BattleForAzerothDungeons.png" alt="" title="Battle For Azeroth Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/Legion-Dungeons">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Legion Dungeons</h2> 
+                          <p>
+                            Bekämpfe die Legion mit diesen speziell abgestimmten Auren, die dir in den Dungeons dieser epischen Erweiterung zur Seite stehen.
+                          </p> 
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/LegionDungeons.png" alt="" title="Legion Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/WOD-Dungeons">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Warlords of Draenor Dungeons</h2> 
+                          <p>
+                            Mit diesen Auren bist du bestens gerüstet, um den Gefahren in den Dungeons von Draenor entgegenzutreten und die Geschichte dieser kriegerischen Welt zu erleben.
+                          </p> 
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/WarlordsOfDraenorDungeons.png" alt="" title="Warlords of Draenor Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/MOP-Dungeons">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Mists of Pandaria Dungeons</h2> 
+                          <p>
+                            Tauche ein in die geheimnisvollen Nebel von Pandaria und navigiere sicher durch ihre Dungeons mit Hilfe dieser nützlichen Auren.
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/MistsOfPandariaDungeons.png" alt="" title="Mists of Pandaria Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/Cataclysm-Dungeons">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Cataclysm Dungeons</h2> 
+                          <p>
+                            Überlebe die Zerstörung von Azeroth mit diesen Auren, die dir in den Dungeons von "Cataclysm" den entscheidenden Vorteil verschaffen.
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/CataclysmDungeons.png" alt="" title="Cataclysm Dungeons" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/GrimBatolFlight">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Grim Batol Flight Sim</h2> 
+                          <p>
+                            Diese Aura hilft dir beim Flug-Event in Grim Batol, indem sie anzeigt, wie viele Schüsse du noch brauchst, um bestimmte Gegner auszuschalten. 
+                            So bist du immer perfekt im Timing und verschwendest keinen Schuss!
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/GrimBatolFlightSim.png" alt="" title="Grim Batol Flight Sim" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/WindsOfChange">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">RLP Wind Direction</h2> 
+                          <p>
+                            Diese Aura zeigt dir im Ruby Life Pools beim Endboss die Richtung an, aus der der nächste Windstoß kommt. 
+                            So kannst du rechtzeitig ausweichen und bleibst immer auf Kurs!
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/RlpWindDirection.png" alt="" title="RLP Wind Direction" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/RunicBrandHelper">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">HOV Runic Brand Helper</h2> 
+                          <p>
+                            Diese Aura zeigt dir während der Runenbrand-Mechanik in den Hallen der Tapferkeit genau an, wohin du dich bewegen musst. 
+                            Zusätzlich gibt es eine Ansage, damit du den richtigen Ort nicht verpasst und blitzschnell reagieren kannst!
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/RunicBrandHelper.png" alt="" title="HOV Runic Brand Helper" />
+                    </a>	
+                  </div>
+
+
+
+                </div>  
               </div>
-              <div class="s-12 m-12 l-4 margin-m-bottom">
-                <div class="padding-2x background-primary">
-                  <i class="icon-sli-umbrella icon3x text-white margin-bottom-30"></i>
-                  <h2 class="text-thin">Parallax Background</h2>
-                  <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-                  <a class="button button-white-stroke text-size-12" href="/">GET MORE INFO</a>
-                </div>
+              <div class="tab-item">
+                <a class="tab-label text-white">Klassen Auren</a>
+                <div class="tab-content lightbox-gallery background-dark">
+                  <div class="line"> 
+                    <p class="margin-bottom-10 text-size-16">
+                      Hier findest du speziell angepasste WeakAuren für die Spezialisierungen, die ich aktiv spiele. 
+                      Diese Auren decken ausschließlich die Meta-Talente ab und sind perfekt abgestimmt, um das Beste aus deinem Charakter herauszuholen. 
+                      Keine unnötigen Spielereien – nur das, was wirklich zählt! <a class ="text-primary-hover" href="https://wago.io/Classes" target="_blank"> <strong>Hier</strong></a>
+                  </p>
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/Warlock">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Hexenmeister</h2> 
+                          <p>
+                            Perfekt abgestimmte Auren für alle drei Spezialisierungen des Hexenmeisters. 
+                            Ob für das Management deiner Dämonen, Überwachung von DoTs oder für die bestmögliche Nutzung deiner Chaosblitze – diese Auren sorgen dafür, dass du immer die Kontrolle behältst und maximale DPS erzielst.
+                          </p>
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/warlock.png" alt="" title="Hexenmeister" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/ShadowPriest">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Schatten Priester</h2> 
+                          <p>
+                            Hier findest du Auren, die dir helfen, das volle Potenzial deiner Schattenmagie auszuschöpfen. 
+                            Ob für die Überwachung deiner Schattenhafte Einblicke oder das perfekte Timing deiner Leerenform – diese Auren lassen dich im Schatten bleiben und deine Gegner zerstören.
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/ShadowPriest.png" alt="" title="Shadow Priest" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/ElementalShaman">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Elementar Schamane</h2> 
+                          <p>
+                            Diese Auren helfen dir, die Kraft der Elemente zu beherrschen. 
+                            Sie tracken deine Maelstrom-Reserven, warnen dich bei proccs und stellen sicher, dass du keinen Elementarstoß oder Lavaeruption verpasst.
+                          </p>
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/elementalShaman.png" alt="" title="Elementar Schamane" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="img/WoWInterface/betterBags.png">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Verwüstungs Dämonenjäger</h2> 
+                          <p>
+                            Mit diesen Auren wirst du sicherstellen, dass du immer an der Spitze der Dämonenjäger stehst. 
+                            Sie tracken deine Metamorphose, überwachen deine Ressourcen und lassen dich keine wichtige Fähigkeit verpassen.
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/HavocDemonHunter.png" alt="" title="" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/BalanceDruid">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Gleichgewichts Druide</h2> 
+                          <p>
+                            Bleib im Gleichgewicht mit diesen speziell abgestimmten Auren für den Gleichgewichtsdruiden. 
+                            Sie tracken deine Astrale Kraft, zeigen dir an, wann du deine Eklipsenfähigkeiten einsetzen solltest, und lassen dich keine Sternenfeuer oder Zorn verfehlen.
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/BalanceDruid.png" alt="" title="Gleichgewichts Druide" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/DeathKnight">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Frost Todesritter</h2> 
+                          <p>
+                            Diese Auren unterstützen dich dabei, deine Frostfähigkeiten zu maximieren. 
+                            Sie tracken deinen Runenmacht-Aufbau, proccs und zeigen dir an, wann du deine Froststöße und Auslöschen optimal einsetzen solltest.
+                          </p>
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/FrostDeathKnight.png" alt="" title="Frost Todesritter" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/AugEvoker">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Verstärkungs Rufer</h2> 
+                          <p>
+                            Spezifische Auren, die deine Verstärkungsfähigkeiten perfekt im Blick halten. 
+                            Sie zeigen dir, wann du deine Stärkungszauber erneuern solltest und helfen dir, das Beste aus deinen Buffs herauszuholen, um deine Gruppe zu unterstützen.
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/AugEvoker.png" alt="" title="Verstärkungs Rufer" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/Paladin">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Vergeltungs Paladin</h2> 
+                          <p>
+                            Diese Auren sind darauf ausgelegt, das Maximum aus deinem heiligen Zorn herauszuholen. 
+                            Sie überwachen deine heiligen Kraftreserven, zeigen dir an, wann du deine wichtigsten Fähigkeiten einsetzen solltest.
+                          </p>
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/RetriPaladin.png" alt="" title="Vergeltungs Paladin" />
+                    </a>	
+                  </div>
+                </div>  
               </div>
-              <div class="s-12 m-12 l-4 margin-m-bottom">
-                <div class="padding-2x background-primary">
-                  <i class="icon-sli-home icon3x text-white margin-bottom-30"></i>
-                  <h2 class="text-thin">Clean Modern Code</h2>
-                  <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-                  <a class="button button-white-stroke text-size-12" href="/">GET MORE INFO</a>
-                </div>
+              <div class="tab-item">
+                <a class="tab-label text-white">Verschiedenes</a>
+                <div class="tab-content lightbox-gallery background-dark">
+                  <div class="line"> 
+                    <p class="margin-bottom-10 text-size-16">
+                      Diese Sammlung bietet dir eine breite Palette an WeakAuren, die dich in allen Aspekten des Spiels unterstützen. 
+                      Von der Raid Ability Timeline, die dir in Echtzeit wichtige Bossfähigkeiten anzeigt, bis hin zum Interrupt Tracker, der sicherstellt, dass du nie einen wichtigen Unterbrechungseffekt verschwendest. 
+                      Darüber hinaus findest du Auren, die deine Charakterstatistiken überwachen. 
+                      Egal, ob du Raids meisterst, in Mythisch+ Dungeons unterwegs bist oder einfach nur deine Leistung optimieren möchtest – diese Auren helfen dir dabei, stets den Überblick zu behalten und das Beste aus deinem Charakter herauszuholen.
+                    </p>
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/RaidAbilityTimeline">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Raid Ability Timeline</h2> 
+                          <p>
+                            Die Raid Ability Timeline ist eine mächtige WeakAura, die dir in Echtzeit anzeigt, wann wichtige Bossfähigkeiten auftreten. 
+                            Mit dieser Aura kannst du die Mechaniken eines Bosskampfes präzise timen und besser darauf reagieren. 
+                            Sie visualisiert die Fähigkeiten in einer übersichtlichen Leiste, sodass du genau weißt, was als Nächstes kommt. 
+                            Perfekt, um deine Abklingzeiten zu planen und sicherzustellen, dass du immer einen Schritt voraus bist.
+                          </p>
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/raidabilitytimeline.png" alt="" title="Raid Ability Timeline" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/MInterruptTracker">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Interrupt Tracker</h2> 
+                          <p>
+                            Der Mythic Interrupt Tracker ist deine ultimative Unterstützung, um in Mythisch+ Dungeons keine wichtigen Unterbrechungen zu verpassen. 
+                            Diese WeakAura zeigt dir nicht nur an, welche deiner Gruppenmitglieder bereits einen Interrupt verwendet haben sondern auch was diese unterbrochen haben. 
+                            So behältst du stets den Überblick und sorgst dafür, dass kritische Zauber schnell unterbrochen werden.
+                          </p>
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/interrupttracker.png" alt="" title="Interrupt Tracker" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/CCTracker">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">CC Expiration tracker</h2> 
+                          <p>
+                            Diese WeakAura zeigt dir die verbleibende Dauer von Soft-CC-Effekten (Verhexen, Polymorph etc.) auf deinen Gegnern an. 
+                            Sie hilft dir, rechtzeitig zu erkennen, wann ein CC-Effekt endet, sodass du deine nächsten Schritte besser planen kannst. 
+                            Ideal, um den Überblick über wichtige CCs zu behalten und deine Reaktionen entsprechend anzupassen.
+                          </p>  
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/ccexpiration.png" alt="" title="CC expiration tracker" />
+                    </a>	
+                  </div>
+                  <div class="s-12 m-6 l-3">
+                    <a class="image-with-hover-overlay image-hover-zoom" href="https://wago.io/CharacterStats">
+                      <div class="image-hover-overlay background-primary"> 
+                        <div class="image-hover-overlay-content text-center padding-2x">
+                          <h2 class="text-thin">Character Stats</h2> 
+                          <p>
+                            Die Character Stats WeakAura bietet dir eine ressourcenschonende und präzise Übersicht über die wichtigsten Statistiken deines Charakters. 
+                            Diese Aura zeigt dir auf einen Blick deine wichtigsten Werte wie Mainstat, Tempo, Vielseitigkeit und andere relevante Attribute an, ohne dabei wertvolle Ressourcen zu beanspruchen. 
+                            Ideal für Spieler, die stets informiert bleiben möchten, ohne die Leistung des Spiels zu beeinträchtigen. 
+                            So kannst du dich auf das Wesentliche konzentrieren und sicherstellen, dass du immer optimal für jede Herausforderung vorbereitet bist.
+                          </p>
+                        </div> 
+                      </div> 
+                      <img src="img/WeakAuras/characterStats.png" alt="" title="Character Stats" />
+                    </a>	
+                  </div>
+                
+                </div>  
               </div>
-            </div>
-          </div>
-        </section> 
+           </div>
+        </section>
       </article>
     </main>
     

@@ -13,108 +13,125 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
+    <script src = "https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript" src="js/twitchHandler.js"></script>    
   </head>
   
   <body class="size-1140">
   	<!-- Live BUTTON -->
-  	<a target="_blank" class="hide-s" href="https://www.twitch.tv/Jodsderechte" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="img/live.png" alt=""></a>
+  	<a id="LiveFlair" class="hide" target="_blank" href="https://www.twitch.tv/Jodsderechte" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="img/live.png" alt=""></a>
     <!-- HEADER -->
     <header role="banner" class="position-absolute">    
       <!-- Top Navigation -->
       <nav class="background-transparent background-transparent-hightlight full-width sticky">
-        <nav class="background-transparent background-transparent-hightlight full-width sticky">
-          <div class="s-12 l-2">
-            <a href="index.html" class="logo">
-              <!-- Logo White Version -->
-              <img class="logo-white" src="img/logo.png" alt="">
-              <!-- Logo Dark Version -->
-              <img class="logo-dark" src="img/logo-dark.png" alt="">
-            </a>
-          </div>
-          <div class="top-nav s-12 l-10">
-            
-            <ul class="right chevron">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="WeakAuras.html">WeakAuras</a></li>
-              <li><a>Addons</a>
-                <ul>
-                  <li><a href="https://www.curseforge.com/wow/addons/dungeon-aura-tools" target="_blank">Dungeon Aura Tools</a></li>
-                  <li><a href="https://www.curseforge.com/wow/addons/groupfinderrio" target="_blank">Group Finder Rio</a></li>
-                  <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Custom Names</a>
-                    <ul>
-                      <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Main Addon</a></li>
-                      <li><a href="https://www.curseforge.com/wow/addons/customnames_elvui" target="_blank">ElvUi Plugin</a></li>
-                      <li><a href="https://www.curseforge.com/wow/addons/customnames_mrt" target="_blank">MRT Plugin</a></li>
-                      <li><a href="https://www.curseforge.com/wow/addons/customnames_chat" target="_blank">Chat Plugin</a></li>
-                      <li><a href="https://wago.io/CustomNames" target="_blank">Plater Mod</a></li>
-                    </ul>
-                  </li>
-                  
-                </ul>
-              </li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="wowInterface.html">WoW Interface</a></li>
-              <li><a href="pokemon.html">Pokemon Stream Game</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/logo.png" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/logo-dark.png" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WeakAuras.html">WeakAuras</a></li>
+            <li><a>Addons</a>
+              <ul>
+                <li><a href="https://www.curseforge.com/wow/addons/dungeon-aura-tools" target="_blank">Dungeon Aura Tools</a></li>
+                <li><a href="https://www.curseforge.com/wow/addons/groupfinderrio" target="_blank">Group Finder Rio</a></li>
+                <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Custom Names</a>
+                  <ul>
+                    <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Main Addon</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_elvui" target="_blank">ElvUi Plugin</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_mrt" target="_blank">MRT Plugin</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_chat" target="_blank">Chat Plugin</a></li>
+                    <li><a href="https://wago.io/CustomNames" target="_blank">Plater Mod</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+            <li><a href="wowInterface.html">WoW Interface</a></li>
+            <li><a href="pokemon.html">Pokemon Stream Game</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     
     <!-- MAIN -->
     <main role="main">
+      <div class="twitch-embed hide"></div>
       <!-- Content -->
       <article>
         <header class="section background-dark">
           <div class="line">        
-            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">Pokemon Game</h1>
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">Willkommen zu meinem Pokémon StreamAvatars-Game!</h1>
             <div id="twitch-embed"></div>
             
-            <p class="margin-bottom-0 text-size-16">Placeholder</p>
+            <p class="margin-bottom-0 text-size-16">
+              Wenn du unseren Stream betrittst und StreamAvatars die Berechtigung erteilst, bekommst du einen eigenen Pokémon-Avatar. <br>
+              In der Extension in der „About Me“-Sektion kannst du deinen Avatar auswählen.<br>
+              Zu beginn kannst du nur zwischen den Starter-Pokémon der Generationen 1 bis 6 wählen.
+            </p>
+            
+    <h2 class = "line margin-top-40"> Pokemon fangen und Entwickeln</h2>
+    <p>
+      Alle 15 Minuten erscheint ein zufälliges Pokémon im Stream, das du mit dem Befehl "!catch [pokemonname]" versuchen kannst zu fangen. <br>
+      Jedes Pokémon ist dabei für 300 Sekunden aktiv, gefolgt von 900 Sekunden Inaktivität, bevor ein neues Pokémon spawnt. <br>
+      Halte also stets die Augen offen und sei bereit, um das nächste Pokémon zu erwischen!
+    </p>
+    <p class="margin-top-10"> Wenn du genug gold gesammelt hast kannst du deinen Avatar mit dem Befehl "!evolve [pokemonname]" weiterentwickeln. 
+      <ul>
+        <li>500 gold für die erste evolution</li>
+        <li>1000 gold für die zweite</li>
+      </ul>
+    </p>        
+    <h2 class="line margin-top-40">Events und Bossfights</h2>
+
+    <p class="margin-top-10">
+      Zusätzlich gibt es spezielle Events, die du mit Kanalpunkten kaufen kannst. Bei Battle Royales und Bossfights kannst du zusätzliche Pokémon gewinnen. 
+    </p>  
+    <p class="margin-top-10"> Die Bossfights haben unterschiedliche Seltenheitsstufen und droppen:</p>
+    <ul>
+        <li><strong>Einfache Bosse + Duell Sieg:</strong> <span class="highlight rarity-common">Häufige</span> Pokémon.</li>
+        <li><strong>Normale Bosse + Battle Royale Sieg:</strong> <span class="highlight rarity-rare">Seltene</span> Pokémon.</li>
+        <li><strong>Harte Bosse:</strong> <span class="highlight rarity-epic">Epische</span> Pokémon.</li>
+    </ul>
+
+    <p class="margin-top-10">Jeder Boss hat eine eigene Loot-Tabelle mit erhöhten Dropchancen auf bestimmte Pokémon-Arten:</p>
+    <ul>
+        <li><strong>Mad King:</strong> Mehr Pokémon der Generation 1.</li>
+        <li><strong>Scrollkeeper:</strong> Mehr Pokémon der Generation 2.</li>
+        <li><strong>Ancient Grandmaster:</strong> Mehr Pokémon der Generation 3.</li>
+        <li><strong>Eye:</strong> Mehr Pokémon der Generation 4.</li>
+        <li><strong>Bidoof:</strong> Mehr Pokémon der Generation 5.</li>
+        <li><strong>Gigantamax Charizard:</strong> Mehr Pokémon der Generation 6.</li>
+        <li><strong>Pumpkin King:</strong> Dropt Pokémon aus allen Generationen.</li>
+    </ul>
+    <h2 class="margin-top-40">Effekte</h2>
+    <p>Du kannst zwei verscheidene Effekte freischalten:</p>
+    <ul>
+        <li><span class="role-tag effekt-hearth">Herzen:</span> für den Zuschauer mit den meisten !hugs</li>
+        <li><span class="role-tag effekt-star">Sterne:</span> für den Zuschauer der die meisten sterne mit !jump gefangen hat</li>
+    </ul>
+    <p>Die führenden für jeden dieser effekte könnt ihr in den Leaderboards in der Extension sehen. </p>  
+    <h2 class="margin-top-40">Nametags</h2>
+    <p>Abhängig von deiner Rolle im Stream erhältst du unterschiedliche Nametags:</p>
+    <ul>
+        <li><span class="role-tag role-viewer">Zuschauer</span></li>
+        <li><span class="role-tag role-follower">Follower</span></li>
+        <li><span class="role-tag role-subscriber">Subscriber</span></li>
+        <li><span class="role-tag role-mod">Mods</span></li>
+        <li><span class="role-tag role-jods">Jods</span></li>
+    </ul>
+
+    <p class="margin-top-10 text-size-20">Viel Spaß beim Spielen und Fangen deiner Pokémon und beim Interagieren mit der Community!</p>
           </div>  
         </header>
-        <div class="section background-white"> 
-          <div class="line">  
-            <h2 class="text-size-40 margin-bottom-30">Investigationes demonstraverunt lectores</h2>
-            <hr class="break-small background-primary margin-bottom-30">
-            <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros 
-            et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            </p> 
-            <blockquote class="margin-top-bottom-20">
-              <h3 class="text-size-20 text-line-height-1 margin-bottom-15">Mirum est notare quam littera gothica</h3>
-              Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.
-            </blockquote>
-            
-            <div class="line margin-top-30">
-              <div class="margin">
-                <div class="s-12 m-6 l-6">
-                  <img src="img/WoWInterface/betterBags.png" alt="">
-                  <p class="margin-top-30">
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; 
-                  est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. 
-                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc 
-                  putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc 
-                  nobis videntur parum clari, fiant sollemnes in futurum.
-                  </p>
-                </div>
-                <div class="s-12 m-6 l-6">
-                  <img src="img/WoWInterface/astralKeys.png" alt="">
-                  <p class="margin-top-30">
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; 
-                  est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. 
-                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc 
-                  putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc 
-                  nobis videntur parum clari, fiant sollemnes in futurum.
-                  </p>
-                </div>
-              </div>
-            </div>      
-          </div>
-        </div> 
       </article>
     </main>
     
