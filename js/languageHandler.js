@@ -1,18 +1,15 @@
 const languageRegex = /^\/[a-z]{2}-[A-Z]{2}/;
-window.onload = function(){
-    console.log("loaded");
-    document.getElementById('linkToLanguage').addEventListener("click", function(event) {
+window.addEventListener("load", (event) => {
+    const languageLink = document.getElementById('linkToLanguage')
+    languageLink.addEventListener("click", function(event) {
         event.preventDefault(); // Prevent the default link behavior
-        console.log("clicked");
-        let language = document.getElementById('linkToLanguage').languageOfLink;
-        console.log("changing language to " + language);
+        let language = languageLink.attributes['languageoflink'].value;
         localStorage.setItem('language', language);
         handleLanguage(language);
     });
-}
+});
 
 function handleLanguage(language){
-    console.log(language);
     let location = window.location.href;
     let url = new URL(location);
     let pathName = url.pathname;

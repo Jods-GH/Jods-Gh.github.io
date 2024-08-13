@@ -1,5 +1,5 @@
 var player
-window.onload = function(){
+window.addEventListener("load", (event) => {
      
     player = new Twitch.Embed("twitch-embed", {
         width: 1,
@@ -11,7 +11,7 @@ window.onload = function(){
       });
       $("#twitch-embed").addClass('hide');  
     player.addEventListener(Twitch.Player.READY, initiate)
-}
+});
 
 function initiate() {
     player.addEventListener(Twitch.Player.ONLINE, handleOnline);
