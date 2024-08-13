@@ -9,6 +9,7 @@ window.onload = function(){
         muted: true,
         //parent: [ "jods-gh.github.io"]
       });
+      document.getElementById("twitch-embed").classList.add('hide');  
     player.addEventListener(Twitch.Player.READY, initiate)
 }
 
@@ -19,11 +20,9 @@ function initiate() {
 }
 
 function handleOnline() {
-    //document.getElementById("twitch").classList.remove('hide');
     document.getElementById("LiveFlair").classList.remove('hide');
     player.removeEventListener(Twitch.Player.ONLINE, handleOnline);
     player.addEventListener(Twitch.Player.OFFLINE, handleOffline);
-    player.setMuted(false);
 }
 
 function handleOffline() {
@@ -31,5 +30,4 @@ function handleOffline() {
     //document.getElementById("twitch").classList.add('hide');
     player.removeEventListener(Twitch.Player.OFFLINE, handleOffline);
     player.addEventListener(Twitch.Player.ONLINE, handleOnline);
-    player.setMuted(true);
 }
