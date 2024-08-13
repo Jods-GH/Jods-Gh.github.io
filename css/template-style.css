@@ -124,12 +124,6 @@ blockquote::before {
   width: 0;
 }
 
-#language-picker-select{
-  background-color: #616161;
-  color: white;
-  border: none;
-  border-radius: 10%;
-}
 .center-horizontally {
   margin: auto;
   width: 35%;
