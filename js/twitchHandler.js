@@ -20,13 +20,13 @@ function initiate() {
 }
 
 function handleOnline() {
-    document.getElementById("LiveFlair").classList.remove('hide');
+    $("LiveFlair").removeClass('hide');
     player.removeEventListener(Twitch.Player.ONLINE, handleOnline);
     player.addEventListener(Twitch.Player.OFFLINE, handleOffline);
 }
 
 function handleOffline() {
-    document.getElementById("LiveFlair").classList.add('hide');
+    $("LiveFlair").addClass('hide');
     //document.getElementById("twitch").classList.add('hide');
     player.removeEventListener(Twitch.Player.OFFLINE, handleOffline);
     player.addEventListener(Twitch.Player.ONLINE, handleOnline);

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jods</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/5e9ecb2ecd.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
+    <script src = "https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript" src="js/twitchHandler.js"></script>   
+    <script src="https://app.enzuzo.com/scripts/cookiebar/aed3451a-598d-11ef-a0e9-eb432816b521"></script>     
+  </head>
+  
+  <body class="size-1140">
+  	<!-- Live BUTTON -->
+  	<a target="_blank" class="hide-s" href="https://www.twitch.tv/Jodsderechte" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="img/live.png" alt=""></a>
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/logo.png" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/logo-dark.png" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WeakAuras.html">WeakAuras</a></li>
+            <li><a>Addons</a>
+              <ul>
+                <li><a href="https://www.curseforge.com/wow/addons/dungeon-aura-tools" target="_blank">Dungeon Aura Tools</a></li>
+                <li><a href="https://www.curseforge.com/wow/addons/groupfinderrio" target="_blank">Group Finder Rio</a></li>
+                <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Custom Names</a>
+                  <ul>
+                    <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Main Addon</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_elvui" target="_blank">ElvUi Plugin</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_mrt" target="_blank">MRT Plugin</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_chat" target="_blank">Chat Plugin</a></li>
+                    <li><a href="https://wago.io/CustomNames" target="_blank">Plater Mod</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+            <li><a href="wowInterface.html">WoW Interface</a></li>
+            <li><a href="pokemon.html">Pokemon Stream Game</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+      <div id="twitch-embed"></div>
+      <!-- Content -->
+      <article>
+        <header class="section background-dark">
+          <div class="line">        
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">WoW Interface</h1>
+            <p class="margin-bottom-0 text-size-16">
+              Hier findest du alle wichtigen Infos zu meinem WoW-Interface! <br>
+              Ich zeige dir die Addons, WeakAuras und anderen Tools, die ich benutze, um mein Spielerlebnis zu optimieren.<br>
+              Von praktischen Helfern bis zu maßgeschneiderten Einstellungen – alles, was du brauchst, um dein Interface so zu gestalten wie meines, ist hier aufgelistet. <br>
+              Viel Spaß beim Entdecken und Ausprobieren!
+            </p>
+            <span class="margin-bottom-10"></span>  
+              
+            <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+              <div class="image-hover-overlay background-primary"> 
+                <div class="image-hover-overlay-content text-center padding-2x">
+                  <p>Alle infos zum Interface findet ihr einzeln unten.</p>  
+                </div> 
+              </div> 
+              <img src="img/WoWInterface/InterfaceExample.PNG" alt="" title="Interface Overview" />
+            </div>	   
+          </div>  
+        </header>
+        
+        <div class="section background-dark"> 
+          <div class="line" id="updater">        
+            <h2 class="margin-top-bottom-40 text-size-60 text-line-height-1">Updaten</h2>
+            <p>
+              Um deine Addons (und WeakAuren!) stets auf dem neuesten Stand zu halten, empfehle ich dir, 
+              <a class="text-primary-hover" href="https://wowup.io/" target="_blank"><strong>WoWUp</strong></a> und den 
+              <a class="text-primary-hover" href="https://weakauras.wtf/" target="_blank"><strong>WeakAuras Companion</strong></a> 
+              zu verwenden, anstatt den CurseForge-Client. <strong class="text-primary">WICHTIG! du musst "WoWUp with CurseForge" 
+              NICHT mit Wago herunterladen. Lass dich nicht von dem "Download beta" Text verwirren.</strong>
+            </p>
+            
+            <p class="margin-top-40">
+              <ul>
+                <li> 
+                  <a class="text-primary-hover" href="https://wowup.io/" target="_blank"><strong>WoWUp</strong></a> bietet dir eine einfache 
+                  Möglichkeit, alle deine Addons zu aktualisieren – einschließlich <a class="text-primary-hover" href="https://tukui.org/elvui" target="_blank"><strong>ElvUI</strong></a>, 
+                  das über den CurseForge-Client nicht verfügbar ist. <br>
+                  Mit WoWUp hast du Zugriff auf Addons aus verschiedenen Quellen, und es ist besonders benutzerfreundlich.
+                </li>
+                <li>
+                  Der <a class="text-primary-hover" href="https://weakauras.wtf/" target="_blank"><strong>WeakAuras Companion</strong></a> ist speziell dafür entwickelt, deine WeakAuras stets aktuell zu halten und ermöglicht dir, individuelle Auren schnell und einfach zu verwalten.
+                </li>
+              </ul>
+            </p>
+
+            <p class="margin-top-40">Nutze diese Tools, um dein Interface mühelos aktuell zu halten und von den neuesten Updates und Funktionen zu profitieren, ohne auf den verfluchten (hihi) Curse-Client angewiesen zu sein.</p>
+           
+            <div class="center-horizontally download-links">
+              <a class="text-tag" href="https://wowup.io/" target="_blank"><strong>WoWUp Curseforge</strong></a>
+              <a class="text-tag" href="https://weakauras.wtf/" target="_blank"><strong>WeakAuras Companion</strong></a>
+            </div>
+            <h2 class="margin-top-bottom-40 text-size-60 text-line-height-1">Benötigte Haupt-Addons</h2>
+            <ul>
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/weakauras-2" target="_blank"><strong>WeakAuras:</strong></a> Ein mächtiges Tool, das dir ermöglicht, eigene Anzeigen und Alarme für verschiedene Spielereignisse zu erstellen. Perfekt, um wichtige Buffs, Debuffs und Cooldowns im Auge zu behalten.</li>
+              <li><a class="text-primary-hover" href="https://tukui.org/elvui" target="_blank"><strong>ElvUI:</strong></a> Ein umfassendes Interface-AddOn, das fast alle UI-Elemente ersetzt und anpassbar macht. Es bietet dir volle Kontrolle über das Aussehen und die Funktionalität deines Interfaces.</li>
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/plater-nameplates" target="_blank"><strong>Plater:</strong></a> Ein erweiterbares Namensplaketten-AddOn, das es dir erlaubt, die Namensplaketten von Gegnern und Verbündeten genau nach deinen Bedürfnissen anzupassen.</li>
+              <li><strong><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/deadly-boss-mods" target="_blank">DBM</a> (oder <a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/big-wigs" target="_blank">BigWigs</a>):</strong> Diese Addons bieten Timer für Schlachtzüge und Dungeons, damit du immer über die wichtigen Mechaniken informiert bist und optimal reagieren kannst.</li>
+              <li><strong><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/bugsack" target="_blank">BugSack</a> & <a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/bug-grabber" target="_blank">BugGrabber</a>:</strong> Diese Addons helfen dir, Fehler im Spiel zu erfassen und zu verwalten. BugSack speichert alle Fehlermeldungen in einem übersichtlichen Fenster, während BugGrabber im Hintergrund arbeitet, um jede Fehlermeldung automatisch zu erfassen und in BugSack anzuzeigen. So kannst du Fehler einfach nachverfolgen, ohne dass sie dein Spielerlebnis stören.</li>
+            </ul>
+            <p class="margin-top-40">
+              <strong>Download:</strong> <br>
+              Du kannst diese Addons ganz einfach über WoWUp herunterladen. Alternativ findest du sie auch auf Wago Addons oder Curseforge. Installiere die Addons, und du bist bereit, dein Interface zu perfektionieren!
+            </p>
+            <div class="center-horizontally-40 download-links">
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/weakauras-2" target="_blank"><strong>WeakAuras</strong></a>
+              <a class="text-tag" href="https://tukui.org/elvui" target="_blank"><strong>ElvUI</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/plater-nameplates" target="_blank"><strong>Plater</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/deadly-boss-mods" target="_blank"><strong>ElvUI</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/bugsack" target="_blank"><strong>BugSack</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/bug-grabber" target="_blank"><strong>BugGrabber</strong></a>
+            </div>
+          </div>
+          <div class="line" id="installer">  
+            <h2 class="margin-top-bottom-40 text-size-60 text-line-height-1">Addon-Profil-Installer</h2>
+            <p>
+                Mit diesem Installer kannst du schnell und einfach alle wichtigen Profile für deine Lieblings-Addons einrichten. Der Installer umfasst:
+            </p>
+            <ul>
+                <li><strong>ElvUI</strong></li>
+                <li><strong>Plater</strong></li>
+                <li><strong>Details!</strong></li>
+                <li><strong>Wichtige WeakAuren</strong></li>
+            </ul>
+            <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+              <div class="image-hover-overlay background-primary"> 
+                <div class="image-hover-overlay-content text-center padding-2x">
+                  <p>Alle infos zum Interface findet ihr einzeln unten.</p> 
+                  <div class="center-horizontally-10">
+                    <a class="text-tag" href="https://www.curseforge.com/wow/addons/jodsui" target="_blank"><strong>Download Link</strong></a> 
+                  </div>
+                </div> 
+              </div> 
+              <img src="img/WoWInterface/Installer.PNG" alt="" title="Interface Overview" />
+            </div>	
+            <p>
+                Mit diesem Profil-Installer sparst du Zeit und bist sofort bereit, dich den Herausforderungen in WoW zu stellen. Alternativ findest du die Profile unten einzeln aufgelistet.
+            </p>
+          </div>
+          <div class="line margin-top-40" id="addons">
+            <h2 class="margin-top-bottom-40 text-size-60 text-line-height-1">Feature-Addons</h2>
+            <div class="margin">
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        SavedInstances: Du willst wissen, wo du schon überall warst, ohne ständig im Kopf nachzuzählen? 
+                        SavedInstances ist dein treuer Begleiter, der dir sagt, welche Dungeons, Raids und Weltbosse du schon geplündert hast. 
+                        Nie mehr schlaflose Nächte, weil du vergessen hast, ob du den Lichking schon so lange bearbeitet hast, dass er dir statt einem Mount bald eine Freundschaftsanfrage schicken könnte!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/saved_instances" target="_blank"><strong>Download Link</strong></a>
+                      </div>
+                      
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/savedInstances.PNG" alt="" title="savedInstances" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Astral Keys: Du und deine Gilde habt so viele Mythisch+ Schlüsselsteine, dass ihr sie schon fast mit Pokémon-Karten verwechselt? 
+                        Astral Keys sorgt dafür, dass du immer weißt, wer den größten (Schlüsselstein) hat und welcher Dungeon noch auf deine To-Do-Liste gehört. 
+                        Planung war noch nie so easy – jetzt kann nichts mehr schiefgehen, außer vielleicht die Taktik!
+                      </p>
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/astral-keys" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/astralKeys.png" alt="" title="Astral Keys" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Better Bags: Immer Chaos in der Tasche, und du fragst dich, wo der verdammte Heiltrank hin ist? 
+                        Better Bags ist wie ein magischer Ordnungszwerg für dein Inventar, der deine Items nicht nur sortiert, sondern auch kategorisiert. 
+                        Nie wieder Verzweiflung beim Suchen – mit Better Bags findest du alles im Handumdrehen!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/better-bags" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/betterBags.png" alt="" title="Better Bags" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Details!: Wer hat den größten… DPS? Mit Details! kannst du’s schwarz auf weiß nachlesen! 
+                        Dieses Addon zeigt dir genau, wer in deiner Gruppe die dicksten Zahlen auf den Tisch knallt – und wer eher mit Wattebällchen wirft. 
+                        Aber keine Sorge, hier zählt nicht nur die Größe, sondern auch die Technik. Perfekt, um im nächsten Raid-Meeting eine kleine Ego-Politur zu machen!  
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/details" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/details.png" alt="" title="Details" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Friend Groups: Deine Freundesliste sieht aus wie ein chaotisches Mosaik? 
+                        Friend Groups bringt Ordnung ins Chaos! 
+                        Erstelle und verwalte Gruppen von Freunden, damit du immer weißt, wer gerade verfügbar ist, ohne den Überblick zu verlieren. 
+                        Perfekt für spontane Raids oder um herauszufinden, welcher Kumpel heute wieder auf einen PvP-Rundgang bereit ist.
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/friend-groups-continued" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/friendGroups.png" alt="" title="FriendGroups" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        GroupFinderFlags: Mit GroupFinderFlags siehst du auf einen Blick, welche Sprache auf den Realms gesprochen wird, dank der praktischen Flaggen neben den Namen der Spieler. 
+                        Kein Rätselraten mehr, ob du es mit einem englischen, deutschen oder französischen Spieler zu tun hast – einfach Flagge zeigen lassen und sofort wissen, welche Sprache dein Gegenüber spricht! 
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/friend-groups-continued" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/groupfinderflags.png" alt="" title="GroupFinderFlags" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Handynotes: Schluss mit dem Suchen und Herumirren! 
+                        Handynotes bringt deine Map auf Vordermann, indem es wichtige Punkte wie seltene Bosse, Schatztruhen und Sammelobjekte direkt auf deiner Karte markiert. 
+                        Egal, ob du auf der Jagd nach seltenen Mounts oder versteckten Schätzen bist, mit Handynotes findest du alles im Handumdrehen – fast so, als hätte dein Charakter einen eingebauten GPS! 
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/handynotes" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/handynotes.png" alt="" title="HandyNotes" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Healers Have To Die (H.H.T.D): Egal, ob PvP oder PvE – Heiler müssen als erstes sterben! 
+                        H.H.T.D markiert automatisch alle Heiler, sodass du sie schnell ausschalten kannst, bevor sie den Kampf unnötig in die Länge ziehen. 
+                        Mit H.H.T.D hast du die Heiler immer im Blick – und machst ihnen das Leben richtig schwer!  
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/h-h-t-d" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/healershavetodie.png" alt="" title="HealersHaveToDie" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Immersion: Questtexte lesen? Kann spannend sein, muss aber nicht! 
+                        Immersion bringt dir das Beste aus beiden Welten: 
+                        Es verwandelt deine Dialoge und Questannahmen in ein interaktives Erlebnis. 
+                        Für die Momente, in denen du wirklich in die Geschichte eintauchen möchtest, wird alles stylisch und übersichtlich präsentiert. 
+                        Und wenn du mal keine Zeit für Geschwafel hast, musst du nur das absolut notwendige sehen. 
+    
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/immersion" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/immersion.png" alt="" title="Immersion" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Mythic Dungeon Tools: Perfektioniere deine Mythisch+ Runs mit Mythic Dungeon Tools! 
+                        Erstelle detaillierte Routen, markiere Feindgruppen und teile deine Pläne blitzschnell mit deiner Gruppe. 
+                        So bist du immer bestens vorbereitet und vermeidest unnötige Pulls – der perfekte Begleiter für effiziente Dungeon-Abenteuer!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/mythic-dungeon-tools" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/mythicdungeontools.png" alt="" title="MythicDungeonTools" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        OmniCC: Nie mehr den Überblick über deine Abklingzeiten verlieren! 
+                        OmniCC zeigt dir direkt auf deinen Aktionsleisten die verbleibende Zeit für deine Fähigkeiten, Items und Zauber an. 
+                        So weißt du immer genau, wann der nächste große Cooldown bereit ist – ganz ohne Rätselraten oder lästiges Nachschauen. 
+                        Einfach, übersichtlich und unverzichtbar für jeden, der das Maximum aus seinen Fähigkeiten herausholen will!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/omni-cc" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/omnicc.png" alt="" title="OmniCC" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        OmniCD: Halte immer den perfekten Überblick über die Abklingzeiten deiner Gruppe! 
+                        OmniCD zeigt dir in Echtzeit die Cooldowns deiner Mitspieler an, damit du genau weißt, wann wichtige Fähigkeiten wie Defensiv-CDs wieder bereit sind. 
+                        Perfekt für koordiniertes Gameplay, ob im PvP oder bei Mythisch+ Runs – mit OmniCD funktioniert Cooldown Management wie ein gut geöltes Uhrwerk!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/omnicd" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/omnicd.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        OPie: Bring Ordnung in deine Aktionsleisten und spare Platz mit OPie! 
+                        Dieses Addon erstellt praktische, kreisförmige Aktionsmenüs, die du mit einem Tastendruck aufrufen kannst. 
+                        Egal, ob für Mounts, Spielzeuge, Zauber oder Items – mit OPie hast du alles griffbereit, ohne deine Leisten zu überladen. 
+                        Es ist wie ein Schweizer Taschenmesser für WoW-Spieler: alles Wichtige immer zur Hand, ohne Chaos auf dem Bildschirm!  
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/opie" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/opie.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        Postal: Schluss mit der ewigen Klickerei im Briefkasten! 
+                        Postal macht das Verwalten deiner Ingame-Post kinderleicht. 
+                        Mit Funktionen wie Massenentnahme und automatischem Öffnen sparst du jede Menge Zeit. 
+                        Ob Auktionshausgewinne oder gesammelte Briefe – mit Postal bist du so schnell durch deine Post, dass selbst der Postmaster neidisch wird! 
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/postal" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/postal.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        Premade Groups Filter: Finde genau die Gruppe, die du suchst! 
+                        Premade Groups Filter ermöglicht es dir, Gruppen nach deinen Vorlieben zu filtern, damit du schneller ans Ziel kommst. 
+                        Kein endloses Scrollen mehr – einfach filtern und loslegen!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/premade-groups-filter" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/premadegroupsfilter.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        Quartz: Mit Quartz hast du deine Zauberzeiten perfekt im Griff! 
+                        Dieses schlanke Castbar-Addon zeigt dir präzise Infos zu deinen Zauber- und GCD-Timern an, damit du immer genau weißt, wann der nächste Zauber rausgeht. 
+                        Ideal für besseres Timing und flüssige Combos!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/quartz" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/quartz.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        QuickFind: Die schnelle Steuerung für die WoW-Suche! 
+                        QuickFind ermöglicht es dir, blitzschnell durch deine Menüs, Optionen und Addons zu navigieren. 
+                        Statt endlos durch Listen zu scrollen, kannst du einfach eine Suchanfrage eingeben und sofort das finden, was du brauchst. 
+                        Der perfekte Begleiter, um Zeit zu sparen und effizient durch das Spiel zu navigieren!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/quickfind" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/quickfind.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        Raider.IO: Dein unverzichtbares Tool für die Mythisch+ und Raid-Performance! 
+                        Raider.IO bietet dir umfassende Statistiken zu dungeons und raids, inklusive raid Progress und Mainscore.
+                        Ideal, um sich für anspruchsvolle Runs vorzubereiten oder die besten Spieler zu finden!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/raiderio" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/raiderio.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        RECraft: Dein Scanner für Handwerksaufträge! 
+                        RECraft überwacht automatisch öffentliche Handwerksaufträge und benachrichtigt dich, sobald ein passender Auftrag verfügbar ist. 
+                        Es erkennt auch neue private und optionale Gildenaufträge. 
+                        Einfach am Handwerkstisch den neuen Button klicken, abwarten und benachrichtigt werden, wenn interessante Aufträge auftauchen!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://addons.wago.io/addons/recraft-crafting-orders-scanner" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/recraft.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        TSM (TradeSkillMaster): Dein ultimativer Begleiter für das Auktionshaus! 
+                        TSM bietet umfassende Tools zur Verwaltung von Handwerksmaterialien, zum Handel und zur Preisgestaltung. 
+                        Mit Funktionen wie automatischer Preisberechnung, Marktplatz-Analyse und Inventarverwaltung wirst du zum Profi im Auktionshaus. 
+                        So sparst du Zeit und maximierst deine Gewinne!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/tradeskill-master" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/tradeskillmaster.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        Rematch mit TSM Pet Values: Optimiere dein Haustier-Management mit Rematch und TSM Pet Values! 
+                        Rematch hilft dir, deine Haustiere zu organisieren und zu verwalten, während TSM Pet Values die Marktwerte deiner Haustiere anzeigt. 
+                        Zusammen bieten sie dir die perfekte Lösung für effektives Haustier-Handel.
+                      </p>  
+                      <div class ="center-horizontally-70">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/rematch" target="_blank"><strong>Rematch</strong></a>
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/rematch_tsmpetvalues" target="_blank"><strong>PetValues</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/rematchTsmPetValues.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        RSA (Raeli's Spell Announce): Dein Helfer für klare und präzise Ankündigungen im Spiel! 
+                        RSA zeigt dir in Echtzeit die wichtigen Zauber und Fähigkeiten deiner Mitspieler an, indem es diese im Chat oder durch benutzerdefinierte Ankündigungen verkündet. 
+                        Ideal, um keine wichtigen Spells in Raid, M+ oder PvP zu verpassen!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/rsa" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/rsa.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        Talent Tree Tweaks: Dein Werkzeug für ein optimiertes Talente-Management! 
+                        Talent Tree Tweaks bietet dir zusätzliche Anpassungsoptionen für deinen Talentbaum, sodass du schnell und einfach zwischen verschiedenen Builds wechseln und deine Talente noch effizienter anpassen kannst. 
+                        Ideal für eine bessere Übersicht und maximale Flexibilität bei der Anpassung deiner Talente!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/talent-tree-tweaks" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/talenttreetweaks.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>  
+                        TomTom: Dein WoW-Navigationssystem, das sogar Google Maps neidisch machen würde! 
+                        TomTom setzt präzise Wegpunkte und zeigt dir den besten Weg durch Azeroth, ohne dass du im virtuellen Stau stehst. 
+                        Keine Sorge, hier gibt es keine Umleitungen, nur klare Anweisungen, damit du nie wieder auf der Karte verloren gehst!
+                      </p>  
+                      <div class ="center-horizontally-40">
+                        <a class="text-tag" href="https://www.curseforge.com/wow/addons/tomtom" target="_blank"><strong>Download Link</strong></a>
+                      </div>  
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/tomtom.png" alt="" title="OmniCD" />
+                </div>	
+              </div>
+
+
+
+
+
+            </div>  
+          </div>
+          <div class="line"  id="addon-profile">  
+            <h2 class="margin-top-bottom-40 text-size-60 text-line-height-1">Addon-Profile</h2>
+            <p>
+              Addon-Profile sind vorgefertigte Einstellungen für Addons, die dir das Leben erleichtern. 
+              Statt mühsam alle Einstellungen selbst vorzunehmen, kannst du einfach ein Profil herunterladen und sofort loslegen. 
+              Hier findest du eine Auswahl an nützlichen Addon-Profilen, die dir den Einstieg in die Welt der Addons erleichtern!
+            </p>
+            <div class = "margin-top-10 wago-links">
+              <script src="https://wago.io/j1SicrjHa/embed.js?style=dark"></script>
+              <script src="https://wago.io/HqVahsyHH/embed.js?style=dark"></script>
+              
+            </div>
+          </div>
+          <div class="line"  id="weakauren">  
+            <h2 class="margin-top-bottom-40 text-size-60 text-line-height-1">WeakAuren</h2>
+            <div class="margin">
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese Aura visualisiert die zeitliche Abfolge wichtiger Raid-Fähigkeiten. 
+                        Du siehst auf einen Blick, wann gefährliche Fähigkeiten bevorstehen und kannst deine eigenen Abklingzeiten besser planen. 
+                        Perfekt für koordiniertes Spiel im Raid.  
+                      </p>  
+                      <script src="https://wago.io/NyseKq1Xo/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/raidabilitytimeline.png" alt="" title="raidabilitytimeline" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura hilft dir dabei, den Überblick über die Unterbrechungen (Interrupts) im Kampf zu behalten. 
+                        Sie zeigt dir, welche Fähigkeiten deiner Mitspieler bereits verwendet wurden, um gegnerische Zauber zu unterbrechen, und informiert dich darüber, wann diese wieder bereit sind. 
+                        So kannst du gezielt und effektiv koordinieren, um kritische Zauber der Gegner zu verhindern und den Kampf zu deinen Gunsten zu wenden.
+                      </p>  
+                      <script src="https://wago.io/f7Z1Te6hb/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/interrupttracker.png" alt="" title="interrupttracker" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura bietet dir eine umfassende Übersicht über wichtige Dungeon-Mechaniken. 
+                        Sie zeigt dir visuelle undakustische Warnungen für entscheidende Ereignisse und Fähigkeiten in Dungeons, damit du immer auf dem neuesten Stand bleibst. 
+                        So kannst du effizient auf Bossfähigkeiten und andere kritische Situationen reagieren und deinen Dungeonlauf optimal koordinieren.
+                      </p>  
+                      <script src="https://wago.io/PfUOlM-IM/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/dungeonauras.png" alt="" title="dungeonauras" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAuren bieten dir spezielle Informationen, die auf deine Klasse zugeschnitten sind. 
+                        Sie zeigt dir wichtige Buffs, Debuffs und Fähigkeiten, die für deine Klasse relevant sind, sowie deren Abklingzeiten und Status. 
+                        So behältst du stets den Überblick über deine klassenbezogenen Mechaniken.
+                      </p>  
+                      <div class="center-horizontally-40">
+                        <a class="text-tag" href="https://wago.io/Classes" target="_blank"><strong>Class Auras</strong></a>
+                      </div>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/classauras.png" alt="" title="class-auras" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura verbessert dein Dragonriding-Erlebnis, indem sie dir wichtige Informationen direkt anzeigt. 
+                        Sie zeigt dir beispielsweise die aktuelle Geschwindigkeit, die Verfügbarkeit von Boosts und andere relevante Statusanzeigen an, um dein Drachenreiten effizienter und angenehmer zu gestalten. 
+                        Mit dieser Aura behältst du die Kontrolle über deine Fähigkeiten und kannst deine Dragonriding-Touren optimal planen.
+                      </p>  
+                      <script src="https://wago.io/tXs4-ei7t/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/dragonriding.png" alt="" title="dragonriding" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura sorgt dafür, dass keine wichtigen Raidbuffs vergessen werden. 
+                        Sie zeigt dir an, welche Buffs deiner Gruppe dir noch fehlen. 
+                        Wenn du selbst buffen kannst, informiert dich die Aura zusätzlich darüber, ob ein Gruppenmitglied noch den entsprechenden Buff benötigt. 
+                        So stellst du sicher, dass alle optimal vorbereitet in den Kampf gehen!
+                      </p>  
+                      <script src="https://wago.io/p1KMJgMX1/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/raidbuffs.png" alt="" title="raidbuffs" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura hilft dir, den Überblick über kampfgebundene Wiederbelebungen (Battle Resurrections) zu behalten. 
+                        Sie zeigt an, wie viele Wiederbelebungen aktuell verfügbar sind und wann die nächste wieder bereit ist. 
+                        So stellst du sicher, dass wichtige Wiederbelebungen gezielt eingesetzt werden und kein Kampf unnötig verloren geht!
+                      </p>  
+                      <script src="https://wago.io/417WWtKOW/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/breztracker.png" alt="" title="breztracker" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura hilft dir, den Überblick über kampfgebundene Wiederbelebungen (Battle Resurrections) zu behalten. 
+                        Sie zeigt an, wie viele Wiederbelebungen aktuell verfügbar sind und wann die nächste wieder bereit ist. 
+                        So stellst du sicher, dass wichtige Wiederbelebungen gezielt eingesetzt werden und kein Kampf unnötig verloren geht!
+                      </p>  
+                      <script src="https://wago.io/BJKO1gsI7/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/repairtracker.png" alt="" title="repair-reminder" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura bewahrt dich davor, wie ein Trottel vorzeitig freizulassen. 
+                        Sie erinnert dich daran, lieber auf eine Kampfwiederbelebung zu warten, statt kopflos auf "Wiederbeleben" zu klicken und eine potenzielle Rettungschance zu vergeuden. 
+                        So vermeidest du peinliche Situationen und bleibst kampfbereit, wenn's drauf ankommt!
+                      </p>  
+                      <script src="https://wago.io/NkAOjKJ6G/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/dontrelease.png" alt="" title="don't-release" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura erinnert dich daran, den Kampfwiederbelebungszauber (Battle Resurrection) anzunehmen. 
+                        Sie sendet dir einen lauten Ton und zeigt ein Icon an, wenn du gerezzt wurdest. 
+                        So verpasst du keine wichtige Wiederbelebung und bleibst immer einsatzbereit!
+                      </p>  
+                      <script src="https://wago.io/ggvjgMo7x/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/takethebrez.png" alt="" title="take-the-brez" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura zeigt dir eine fortlaufende Leiste an, die anzeigt, wenn ein Mitglied deiner Gruppe oder deines Raids gestorben ist.
+                         Ideal, um schnell zu sehen, wenn jemand gestorben ist und deine Handlung gezielt anzupassen.
+                      </p>  
+                      <script src="https://wago.io/-y14AGmDA/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/memberdied.png" alt="" title="member-died" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura zeigt dir dein eigenes Raidmark direkt im Interface an. 
+                        So behältst du jederzeit den Überblick über deine Markierungen.
+                        Keine Verwirrung mehr welches Mark du hast!
+                      </p>  
+                      <script src="https://wago.io/zfw9UvkI7/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/raidmark.png" alt="" title="raid-mark" />
+                </div>	
+              </div>
+              
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura zeigt dir, wenn externe Schutz- und Unterstützungszauber (wie z.B. Dmg reduzierungen) auf dich geworfen werden. 
+                        Sie informiert dich visuell, wann diese Zauber aktiviert wurden, damit du ihre Wirkung optimal nutzen kannst. 
+                        So behältst du den Überblick über die Unterstützung, die dir von deinen Mitspielern zuteilwird, und kannst gezielt darauf reagieren.
+                      </p>  
+                      <script src="https://wago.io/4J8ChnHOM/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/externals on me.png" alt="" title="externals-on-me" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura zeigt dir die verbleibende Dauer von Soft-CC-Effekten (Verhexen, Polymorph etc.) auf deinen Gegnern an. 
+                        Sie hilft dir, rechtzeitig zu erkennen, wann ein CC-Effekt endet, sodass du deine nächsten Schritte besser planen kannst. 
+                        Ideal, um den Überblick über wichtige CCs zu behalten und deine Reaktionen entsprechend anzupassen.
+                      </p>  
+                      <script src="https://wago.io/wQ11u_FTB/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/ccexpiration.png" alt="" title="cc-expiration" />
+                </div>	
+              </div>
+              <div class="s-12 m-6 l-4">
+                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <p>
+                        Diese WeakAura überwacht den Abklingzeitstatus und die verbleibende Dauer von Bloodlust (oder vergleichbaren Buffs wie Heroism). 
+                        Sie zeigt dir sowohl, wann der Buff wieder verfügbar ist, als auch die verbleibende Zeit, bis der aktuelle Bloodlust endet. 
+                        So behältst du jederzeit den Überblick über den Einsatz von Bloodlust und kannst deine Strategie und Koordination im Kampf optimal anpassen.
+                      </p>  
+                      <script src="https://wago.io/ry_EsCrIm/embed.js?style=dark"></script>
+                    </div> 
+                  </div> 
+                  <img src="img/WoWInterface/bloodlusttracker.png" alt="" title="bloodlusttracker" />
+                </div>	
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="line" id = "mini-addons-plugins"> 
+            <h1 class="margin-top-bottom-40 text-size-60 text-line-height-1">Mini-Addons/Plugins</h1>
+            <ul>
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/have-we-met" target="_blank"><strong>Have We Met:</strong></a> Erinnert dich an vorherige Begegnungen mit Spielern, damit du nie wieder die Leute vergisst, die du lieber nicht wiedersehen möchtest!</li>
+              
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/leatrix-plus" target="_blank"><strong>Leatrix Plus:</strong></a> Ein umfassendes Tool zur Verbesserung deiner Spielerfahrung mit Anpassungen für Interface, Questautomatisierung und mehr.</li>
+            </ul>
+            <div class="download-links">
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/have-we-met" target="_blank"><strong>Have We Met</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/leatrix-plus" target="_blank"><strong>Leatrix Plus</strong></a>
+            </div>
+            <ul class="margin-top-40">
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/better-bags" target="_blank"><strong>BetterBags Plugins:</strong></a>
+                <ul>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/betterbags-bettersort" target="_blank"><strong>Better Sort:</strong></a> Verbessert die Sortierung von **BetterBags**.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/betterbags-the-war-within" target="_blank"><strong>The War Within:</strong></a> Fügt WarWithin-spezifische Kategorien hinzu.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/betterbags-keystones" target="_blank"><strong>Keystones:</strong></a> Mythisch+ Schlüsselsteine in einer eigenen Kategorie.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/betterbags-secrets" target="_blank"><strong>Secrets:</strong></a> Kategorien für Geheimnisse und Sammlerstücke.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/betterbags-transmogs" target="_blank"><strong>Transmogs:</strong></a> Kategorien für Transmog-Gegenstände.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/betterbags-world-events" target="_blank"><strong>World Events:</strong></a> Kategorien für Events wie den Dunkelmondjahrmarkt.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/betterbags-openable-items" target="_blank"><strong>Openable Items:</strong></a> Kennzeichnet Gegenstände in deinem Inventar, die du öffnen oder benutzen kannst.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/betterbags-teleports" target="_blank"><strong>Teleports:</strong></a> Verwalte und finde schnell deine Teleport-Gegenstände und -Fähigkeiten.</li>
+                </ul>
+            </li>
+          </ul>
+          <div class="download-links">
+            <a class="text-tag" href="https://www.curseforge.com/wow/addons/betterbags-bettersort" target="_blank"><strong>Better Sort</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/betterbags-the-war-within" target="_blank"><strong>The War Within</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/betterbags-keystones" target="_blank"><strong>Keystones</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/betterbags-secrets" target="_blank"><strong>Secrets</strong></a> 
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/betterbags-transmogs" target="_blank"><strong>Transmogs</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/betterbags-world-events" target="_blank"><strong>World Events</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/betterbags-openable-items" target="_blank"><strong>Openable Items</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/betterbags-teleports" target="_blank"><strong>Teleports</strong></a>
+          </div>
+          <ul class="margin-top-40">
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank"><strong>Custom Names:</strong></a> Verleihe Spielern und ganzen Accounts individuelle Spitznamen, die statt der normalen Namen angezeigt werden. So behältst du leichter den Überblick und erkennst wichtige Spieler auf einen Blick.
+                  <ul>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/customnames_chat" target="_blank"><strong>Chat:</strong></a> Zeigt die benutzerdefinierten Spitznamen direkt im Chat an, damit du immer weißt, wer wer ist.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/customnames_elvui" target="_blank"><strong>ElvUI:</strong></a> Fügt ElvUI tags für benutzerdefinierten Namen hinzu, um die Namen in den Unit-Frames und anderen Bereichen des Interfaces anzupassen.</li>
+                    <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/customnames_mrt" target="_blank"><strong>MRT:</strong></a> Erweitert die MRT-Funktionen um benutzerdefinierte Namen, um diese sowohl in der Note als auch den CD leisten anzuzeigen.</li>
+                  </ul>
+              </li>
+            </ul>
+            <div class="download-links">
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank"><strong>Custom Names</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/customnames_chat" target="_blank"><strong>Chat</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/customnames_elvui" target="_blank"><strong>ElvUI</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/customnames_mrt" target="_blank"><strong>MRT</strong></a>
+            </div>
+            <ul class="margin-top-40"> 
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/actionbar-buddy-elvui-plugin" target="_blank"><strong>ElvUI Action Bar Buddy:</strong></a> Erweitert die Funktionen und Anpassungsoptionen der Aktionsleisten in ElvUI.</li>
+              
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/plater-nameplater-performance-units-plugin" target="_blank"><strong>Plater Performance Units:</strong></a> Verbessert die Performance von Plater.</li>
+            </ul>
+            <div class="download-links">
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/actionbar-buddy-elvui-plugin" target="_blank"><strong>ElvUI Action Bar Buddy</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/plater-nameplater-performance-units-plugin" target="_blank"><strong>Plater Performance Units</strong></a>
+              
+            </div>
+            <ul class="margin-top-40"> 
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/handynotes" target="_blank"><strong>Handy Notes Plugins:</strong></a>
+                  <ul>
+                      <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/handynotes_dungeonlocations" target="_blank"><strong>Dungeon Locations:</strong></a> Zeigt die Standorte von Dungeons auf deiner Karte an.</li>
+                      <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/handynotes-war-within" target="_blank"><strong>The War Within Treasures:</strong></a> Markiert die Fundorte von Schätzen im The War Within.</li>
+                  </ul>
+              </li>
+            </ul>
+            <div class="download-links">
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/handynotes_dungeonlocations" target="_blank"><strong>Dungeon Locations</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/handynotes-war-within" target="_blank"><strong>The War Within Treasures</strong></a>
+              
+            </div>
+            <ul class="margin-top-40"> 
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/bad-boy" target="_blank"><strong>BadBoy:</strong></a> Dein zuverlässiger Spam-Blocker für WoW! BadBoy filtert unerwünschte Nachrichten und sorgt dafür, dass dein Chat frei von Spam bleibt. Zusätzlich kannst du mit BadBoy Spieler melden, die sich nicht an die Regeln halten.</li>
+              
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/colorpickerplus" target="_blank"><strong>Color Picker Plus:</strong></a> Ein erweitertes Farbwahl-Tool, das dir hilft, Farben genau auszuwählen und anzupassen, um dein Interface perfekt zu gestalten.</li>
+              
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/sharedmedia_causese" target="_blank"><strong>Sharedmedia Causese:</strong></a> Fügt Sounds für WeakAuras und andere Addons hinzu.</li>
+          
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/simulationcraft" target="_blank"><strong>SimulationCraft:</strong></a> Exportiert SimCraft-Strings für die Simulation auf Raidbots.</li>
+              
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/errorfilter" target="_blank"><strong>Error Filter:</strong></a> Filtert Fehlermeldungen, um deine Spielerfahrung zu verbessern. Nie wieder "I don't have enough mana"</li>
+              
+              <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/flash-taskbar" target="_blank"><strong>Flash Task Bar:</strong></a> Lässt das WoW-Icon in der Taskleiste bei spezifischen events blinken. Beispielsweise wenn du angegriffen wirst.</li>
+          
+            </ul>
+            <div class="download-links">
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/bad-boy" target="_blank"><strong>BadBoy</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/colorpickerplus" target="_blank"><strong>Color Picker Plus</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/sharedmedia_causese" target="_blank"><strong>Sharedmedia Causese</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/simulationcraft" target="_blank"><strong>SimulationCraft</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/errorfilter" target="_blank"><strong>Error Filter</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/flash-taskbar" target="_blank"><strong>Flash Task Bar</strong></a>
+              
+            </div>
+            <ul class="margin-top-40"> 
+              <li><strong>Entwickler Tools:</strong>
+                <ul>
+                  <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/iencountereventtracker" target="_blank"><strong>iEncounterEventTracker:</strong></a> Ein Event-Tracker, der dir hilft, alle wichtigen Ereignisse und Timer in einem Encounter zu analysieren.</li>
+                  <li><a class="text-primary-hover" href="https://github.com/brittyazel/DevTool" target="_blank"><strong>DevTool:</strong></a> Ein umfangreiches Entwickler-Tool für das Betrachten von Daten.</li>
+                  <li><a class="text-primary-hover" href="https://www.curseforge.com/wow/addons/wowlua" target="_blank"><strong>WoWLua:</strong></a> Ein Addon für die Entwicklung und das Testen von Lua-Skripten.</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="download-links">
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/iencountereventtracker" target="_blank"><strong>iEncounterEventTracker</strong></a>
+              <a class="text-tag" href="https://github.com/brittyazel/DevTool" target="_blank"><strong>DevTool</strong></a>
+              <a class="text-tag" href="https://www.curseforge.com/wow/addons/wowlua" target="_blank"><strong>WoWLua</strong></a>
+            </div>
+            <p class="margin-top-40">
+              <strong>Download:</strong> <br>
+              Du kannst diese Addons ganz einfach über WoWUp herunterladen. Alternativ findest du sie auch auf Wago Addons, CurseForge oder GitHub. Installiere die Addons, und du bist bereit, dein Interface zu perfektionieren! <strong>DevTool</strong> ist nur als GitHub-Release verfügbar. Füge in WoWUp unter "Get Addons" > "Install from URL" den GitHub-Link ein, um es zu installieren.
+            </p>
+          </div>
+
+        </div> 
+      </article>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+      
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+       
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-4">
+          <a href="https://discord.com/invite/v3gYmYamGJ"target="_blank"><i class="fa fa-brands fa-discord w3-hover-opacity"></i></a> 
+          <a href="https://github.com/Jodsderechte/"target="_blank"><i class="fa fa-brands fa-github w3-hover-opacity"></i></a> 
+          <a href="https://www.youtube.com/user/Jodsderechte"target="_blank"><i class="fa fa-brands fa-youtube w3-hover-opacity"></i></a> 
+          <a href="https://www.paypal.com/donate/?hosted_button_id=PSQ4D3HXNZKMG"target="_blank"><i class="fa fa-brands fa-paypal w3-hover-opacity"></i></a>
+          <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
+        </div>
+        <div class="s-12 l-4">
+          <a href="Datenschutz.html" class="text-white right">Datenschutz</a>
+          <a href="Impressum.html" class="text-white">Impressum</a>
+        </div>
+        <div class="s-12 l-4">
+          <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>

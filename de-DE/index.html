@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jods</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <script src="https://app.enzuzo.com/scripts/cookiebar/aed3451a-598d-11ef-a0e9-eb432816b521"></script> 
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/5e9ecb2ecd.js" crossorigin="anonymous"></script>
+    <script src = "https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
+    <script type="text/javascript" src="js/twitchHandler.js"></script>   
+    <script type="text/javascript" src="js/languageHandler.js"></script>     
+  </head>
+  
+  <body class="size-1140">
+  	<!-- Live BUTTON -->
+  	<a id="LiveFlair" class="hide" target="_blank" href="https://www.twitch.tv/Jodsderechte" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="img/live.png" alt=""></a>
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="img/logo.png" alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="img/logo-dark.png" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WeakAuras.html">WeakAuras</a></li>
+            <li><a>Addons</a>
+              <ul>
+                <li><a href="https://www.curseforge.com/wow/addons/dungeon-aura-tools" target="_blank">Dungeon Aura Tools</a></li>
+                <li><a href="https://www.curseforge.com/wow/addons/groupfinderrio" target="_blank">Group Finder Rio</a></li>
+                <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Custom Names</a>
+                  <ul>
+                    <li><a href="https://www.curseforge.com/wow/addons/libcustomnames" target="_blank">Main Addon</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_elvui" target="_blank">ElvUi Plugin</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_mrt" target="_blank">MRT Plugin</a></li>
+                    <li><a href="https://www.curseforge.com/wow/addons/customnames_chat" target="_blank">Chat Plugin</a></li>
+                    <li><a href="https://wago.io/CustomNames" target="_blank">Plater Mod</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+            <li><a href="wowInterface.html">WoW Interface</a></li>
+            <li><a href="pokemon.html">Pokemon Stream Game</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <header>
+        
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white text-center">
+          <div class="item">
+            <div class="s-12">
+              <video autoplay muted loop class="background-video" alt="img/header.jpg">
+                <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt1913841d0feb865a/6543d73482016a729f7e8cd8/11.0_an_wbats_1.mp4" type="video/mp4">
+              </video>
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80" >
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">WeakAuras</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40"> Hier findet ihr alle meine WeakAuren.</p></div>
+                    <div class="line">
+                      <div class="s-12 m-12 l-3 center">
+                        <a class="button button-white-stroke s-12" href="https://wago.io/p/jodsderechte" target="_blank"> Wago.io</a>
+                      </div>       
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <div class="item">
+            <div id="twitch-embed"></div>
+            <video autoplay muted loop class="background-video" alt="img/header.jpg">
+              <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt1913841d0feb865a/6543d73482016a729f7e8cd8/11.0_an_wbats_1.mp4" type="video/mp4">
+            </video>
+            <div class="s-12 twitch-embed">
+                <iframe class=""
+                  src="https://player.twitch.tv/?channel=Jodsderechte&muted=true&parent=jods-gh.github.io" 
+                  height="540"
+                  width="960"
+                  allowfullscreen>
+                </iframe> 
+            </div>
+          </div>   
+          <div class="item">
+            <div class="s-12">
+              <video autoplay muted loop class="" alt="img/header.jpg">
+                <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt1913841d0feb865a/6543d73482016a729f7e8cd8/11.0_an_wbats_1.mp4" type="video/mp4">
+              </video>
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">Alle Links</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40"> Hier findet ihr alle meine Links.</p></div>
+                    <div class="line">
+                      <div class="s-12 m-12 l-3 center">
+                        <a class="button button-white-stroke s-12" href="https://linktr.ee/jodsderechte" target="_blank">Get Started Now</a>
+                      </div>       
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>           
+        </div>               
+      </header>
+      
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+      
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      
+      <!-- Bottom Footer -->
+       
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-4">
+          <a href="https://discord.com/invite/v3gYmYamGJ"target="_blank"><i class="fa fa-brands fa-discord w3-hover-opacity"></i></a> 
+          <a href="https://github.com/Jodsderechte/"target="_blank"><i class="fa fa-brands fa-github w3-hover-opacity"></i></a> 
+          <a href="https://www.youtube.com/user/Jodsderechte"target="_blank"><i class="fa fa-brands fa-youtube w3-hover-opacity"></i></a> 
+          <a href="https://www.paypal.com/donate/?hosted_button_id=PSQ4D3HXNZKMG"target="_blank"><i class="fa fa-brands fa-paypal w3-hover-opacity"></i></a>
+          <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
+        </div>
+        <div class="s-12 l-4">
+          <a href="Datenschutz.html" class="text-white right">Datenschutz</a>
+          <a href="Impressum.html" class="text-white">Impressum</a>
+        </div>
+        <div class="s-12 l-4">
+          <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>
