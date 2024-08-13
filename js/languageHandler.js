@@ -1,4 +1,5 @@
 const languageRegex = /^\/[a-z]{2}-[A-Z]{2}/;
+const mainLanguage = 'en-US';
 window.addEventListener("load", (event) => {
     const languageLink = document.getElementById('linkToLanguage')
     languageLink.addEventListener("click", function(event) {
@@ -15,10 +16,17 @@ function handleLanguage(language){
     let pathName = url.pathname;
     if (languageRegex.test(pathName)) {
         // Replace the existing language code with the new one
-        pathName = pathName.replace(languageRegex, `/${language}`);
+        if (language === mainLanguage){
+            pathName = pathName.replace(languageRegex, ``);
+        }
+        else{
+            pathName = pathName.replace(languageRegex, `/${language}`);
+        }
     } else {
         // If no language code is present, prepend the new one
-        pathName = `/${language}${pathName}`;
+        if (language !== mainLanguage){
+            pathName = `/${language}${pathName}`;
+        }
     }
 
     let newUrl = `${url.origin}${pathName}${url.search}`;
